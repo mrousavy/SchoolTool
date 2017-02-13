@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Widget;
 using Android.OS;
 
 namespace SchoolTool {
@@ -8,7 +9,7 @@ namespace SchoolTool {
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            // SetContentView (Resource.Layout.Main);
         }
     }
 }
