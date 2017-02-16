@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using static SchoolTool.WebUnitsJsonSchemes;
+using SchoolTool.WebUnitsJsonSchemes;
 
 
 namespace SchoolTool {
