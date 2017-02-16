@@ -6,8 +6,9 @@ namespace SchoolTool {
         public class WebUntisQuery {
             public string id;
             public string method;
-            public @params @params;
             public string jsonrpc = "2.0";
+
+            public class @params { }
         }
         //Parameter Class for JSON Query Method Parameters
         public class @params {
@@ -37,6 +38,20 @@ namespace SchoolTool {
         public class Logout : WebUntisQuery {
             public string id;
             public string method = "logout";
+            public @params @params;
+        }
+
+        //Get list of teachers
+        public class Teachers : WebUntisQuery {
+            public string id;
+            public @params @params = new @params();
+            public readonly string method = "getTeachers";
+        }
+
+        //Get list of students
+        public class Students : WebUntisQuery {
+            public string id;
+            public string method = "getStudents";
             public @params @params;
         }
         #endregion
