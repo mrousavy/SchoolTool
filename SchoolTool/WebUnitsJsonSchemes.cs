@@ -1,9 +1,9 @@
 namespace SchoolTool {
     //All JSON Queries from the WebUntis API translated to C#
-    public struct WebUnitsJsonSchemes {
+    public namespace WebUnitsJsonSchemes {
         #region Special Classes
         //Base-Class for all Queries
-        public class WebUntisQuery {
+        public struct WebUntisQuery {
             public string id;
             public string method;
             public string jsonrpc = "2.0";
@@ -19,7 +19,7 @@ namespace SchoolTool {
         //}
 
         //Response or Result from a Query
-        public class result {
+        public struct result {
             public string sessionId;
             public int personType;
             public int personId;
@@ -28,7 +28,7 @@ namespace SchoolTool {
 
         #region Individual Queries
         //Authenticate the given user and start a session
-        public class Authentication : WebUntisQuery {
+        public struct Authentication : WebUntisQuery {
             public string id;
             public readonly string method = "authenticate";
 
@@ -40,19 +40,19 @@ namespace SchoolTool {
         }
 
         //End the session
-        public class Logout : WebUntisQuery {
+        public struct Logout : WebUntisQuery {
             public string id;
             public readonly string method = "logout";
         }
 
         //Get list of teachers
-        public class Teachers : WebUntisQuery {
+        public struct Teachers : WebUntisQuery {
             public string id;
             public readonly string method = "getTeachers";
         }
 
         //Get list of students
-        public class Students : WebUntisQuery {
+        public struct Students : WebUntisQuery {
             public string id;
             public readonly string method = "getStudents";
         }
