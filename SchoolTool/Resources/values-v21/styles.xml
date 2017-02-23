@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
 <resources>
   <style name="UntisMaterialTheme" parent="android:Theme.Material.Light">
     <!--Primary Color = Title/Action Bar, ...-->
