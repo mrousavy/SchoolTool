@@ -6,5 +6,7 @@
     <item name="android:colorPrimary">@color/orange_400</item>
     <!--Accent Color = Selected Checkboxes, Radiobuttons, ...-->
     <item name="android:colorAccent">@color/orange_500</item>
+
+    <!--<item name="android:statusBarColor">@color/orange_600</item>-->
   </style>
 </resources>

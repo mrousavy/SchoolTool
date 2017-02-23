@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <resources>
-  <!--A single normal lesson for the Timegrid--><!--
-  <style name="Lesson" parent="CardView">
+  <!--A single normal lesson for the Timegrid-->
+  <!--<style name="Lesson" parent="CardView">
     <item name="cardBackgroundColor">@color/orange_500</item>
     <item name="cardCornerRadius">18dp</item>
   </style>
@@ -15,7 +15,8 @@
 
   --><!--A single cancelled lesson for the Timegrid--><!--
   <style name="LessonCancellation" parent="CardView">
-    <item name="cardBackgroundColor">@color/grey_500</item>
-    <item name="cardCornerRadius">18dp</item>
+    <item name="CardView:cardBackgroundColor">@color/grey_500</item>
+    <item name="CardView:cardCornerRadius">18dp</item>
   </style>-->
+
 </resources>
