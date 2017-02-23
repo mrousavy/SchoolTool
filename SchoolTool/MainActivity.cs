@@ -1,10 +1,11 @@
 ﻿using Android.App;
 using Android.OS;
+using Android.Support.V7.App;
 using WebUntisSharp;
 
 namespace SchoolTool {
     [Activity(Label = "SchoolTool", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity {
+    public class MainActivity : AppCompatActivity {
         private WebUntis _untis;
 
         protected override void OnCreate(Bundle bundle) {
