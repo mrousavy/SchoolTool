@@ -5,4 +5,5 @@
     android:layout_height="match_parent"
     android:theme="@style/UntisMaterialTheme"
     android:minWidth="25px"
-    android:minHeight="25px" />
+    android:minHeight="25px">
+</LinearLayout>

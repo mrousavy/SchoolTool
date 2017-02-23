@@ -2468,6 +2468,15 @@ namespace SchoolTool
 			// aapt resource value: 0x7f070002
 			public const int CardView_Light = 2131165186;
 			
+			// aapt resource value: 0x7f070136
+			public const int Lesson = 2131165494;
+			
+			// aapt resource value: 0x7f070138
+			public const int LessonCancellation = 2131165496;
+			
+			// aapt resource value: 0x7f070137
+			public const int LessonNew = 2131165495;
+			
 			// aapt resource value: 0x7f070013
 			public const int Platform_AppCompat = 2131165203;
 			
@@ -2753,8 +2762,8 @@ namespace SchoolTool
 			// aapt resource value: 0x7f0700f1
 			public const int ThemeOverlay_AppCompat_Light = 2131165425;
 			
-			// aapt resource value: 0x7f070136
-			public const int UntisMaterialTheme = 2131165494;
+			// aapt resource value: 0x7f070139
+			public const int UntisMaterialTheme = 2131165497;
 			
 			// aapt resource value: 0x7f0700f2
 			public const int Widget_AppCompat_ActionBar = 2131165426;
