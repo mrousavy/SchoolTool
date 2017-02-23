@@ -1,22 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <resources>
-  <!--A single normal lesson for the Timegrid-->
-  <style name="Xamarin.Android.Support.v7.CardView.Lesson">
+  <!--A single normal lesson for the Timegrid--><!--
+  <style name="Lesson" parent="CardView">
     <item name="cardBackgroundColor">@color/orange_500</item>
     <item name="cardCornerRadius">18dp</item>
   </style>
 
-  <!--A single newly added lesson for the Timegrid-->
-  <style name="Xamarin.Android.Support.v7.CardView.LessonNew">
+  --><!--A single newly added lesson for the Timegrid--><!--
+  <style name="LessonNew" parent="CardView">
     <item name="cardBackgroundColor">@color/green_500</item>
     <item name="cardCornerRadius">18dp</item>
   </style>
 
-  <!--A single cancelled lesson for the Timegrid-->
-  <style name="Xamarin.Android.Support.v7.CardView.LessonCancellation">
+  --><!--A single cancelled lesson for the Timegrid--><!--
+  <style name="LessonCancellation" parent="CardView">
     <item name="cardBackgroundColor">@color/grey_500</item>
     <item name="cardCornerRadius">18dp</item>
-  </style>
-
+  </style>-->
 </resources>
