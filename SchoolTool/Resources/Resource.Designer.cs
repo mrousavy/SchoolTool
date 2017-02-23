@@ -44,11 +44,23 @@ namespace SchoolTool
 		public partial class Color
 		{
 			
+			// aapt resource value: 0x7f040002
+			public const int green_500 = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int green_600 = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int grey_400 = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int grey_500 = 2130968581;
+			
 			// aapt resource value: 0x7f040000
-			public const int untis_orange_400 = 2130968576;
+			public const int orange_400 = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int untis_orange_500 = 2130968577;
+			public const int orange_500 = 2130968577;
 			
 			static Color()
 			{
@@ -95,11 +107,8 @@ namespace SchoolTool
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int ApplicationName = 2131034113;
-			
 			// aapt resource value: 0x7f050000
-			public const int Hello = 2131034112;
+			public const int ApplicationName = 2131034112;
 			
 			static String()
 			{

@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="SchoolTool.SchoolTool" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="16" />
+	<uses-sdk android:minSdkVersion="10" />
 	<application android:label="SchoolTool" android:theme="@android:style/Theme.Material.Light" android:icon="@drawable/Icon">
 		<!--Activities-->
 	</application>
-
-	<dependencies>
-		
-	</dependencies>
+	<dependencies></dependencies>
 </manifest>

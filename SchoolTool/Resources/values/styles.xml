@@ -2,19 +2,19 @@
 
 <resources>
   <!--A single normal lesson for the Timegrid-->
-  <style name="CardView.Lesson">
+  <style name="Xamarin.Android.Support.v7.CardView.Lesson">
     <item name="cardBackgroundColor">@color/orange_500</item>
     <item name="cardCornerRadius">18dp</item>
   </style>
 
   <!--A single newly added lesson for the Timegrid-->
-  <style name="CardView.LessonNew">
+  <style name="Xamarin.Android.Support.v7.CardView.LessonNew">
     <item name="cardBackgroundColor">@color/green_500</item>
     <item name="cardCornerRadius">18dp</item>
   </style>
 
   <!--A single cancelled lesson for the Timegrid-->
-  <style name="CardView.LessonCancellation">
+  <style name="Xamarin.Android.Support.v7.CardView.LessonCancellation">
     <item name="cardBackgroundColor">@color/grey_500</item>
     <item name="cardCornerRadius">18dp</item>
   </style>
