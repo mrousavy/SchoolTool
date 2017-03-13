@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">SchoolTool</string>
+  <string name="ApplicationName">SchoolTool</string>
+  <string name="alarm">Alarm</string>
+  <string name="language">Language  </string>
+  <string name="account">Account</string>
+  
+  <string name="Hello">Hello World, Click Me!</string>
 </resources>

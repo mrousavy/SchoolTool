@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:id="@+id/settingsIMG"
+        android:minWidth="150px"
+        android:maxWidth="150px"
+        android:minHeight="150px"
+        android:maxHeight="150px"
+        android:layout_margin="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Sample Text"
+        android:id="@+id/settingsText"
+        android:textSize="10pt"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft=" 50px"
+        android:minHeight="150px"
+        android:maxHeight="150px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/settingsIMG"
+        android:layout_toRightOf="@id/settingsIMG" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:id="@+id/settingsIMG2"
+        android:minWidth="150px"
+        android:maxWidth="150px"
+        android:minHeight="150px"
+        android:maxHeight="150px"
+        android:layout_below="@id/settingsIMG"
+        android:layout_margin="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Sample Text 2"
+        android:id="@+id/settingsText2"
+        android:textSize="10pt"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft=" 50px"
+        android:minHeight="150px"
+        android:maxHeight="150px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/settingsIMG2"
+        android:layout_toRightOf="@id/settingsIMG2" />
+</RelativeLayout>

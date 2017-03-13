@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">SchoolTool</string>
+  <string name="alarm">Wecker</string>
+  <string name="language">Sprache</string>
+  <string name="account">Benutzerkonto</string>
+  
+  <string name="Hello">Hallo Welt, drück mich!</string>
+</resources>
