@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/tableLayout1">
+    <TableRow
+        p1:id="@+id/tableRow1"
+        p1:layout_height="343.0dp">
+        <TimePicker
+            p1:layout_column="1"
+            p1:id="@+id/timePicker1"
+            p1:layout_marginBottom="12.0dp"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:numbersSelectorColor="#ffff8c00"
+            p1:numbersInnerTextColor="#ffff8c00"
+            p1:layout_height="351.0dp"
+            p1:layout_width="354.5dp" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow2">
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:layout_column="1"
+            p1:id="@+id/linearLayout2">
+            <TextView
+                p1:text="Tage auswählen:"
+                p1:textAppearance="?android:attr/textAppearanceSmall"
+                p1:layout_width="wrap_content"
+                p1:layout_height="23.0dp"
+                p1:id="@+id/textView4"
+                p1:layout_marginBottom="16.5dp"
+                p1:layout_marginTop="9.5dp" />
+            <CheckBox
+                p1:text="Mo"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/checkBox1" />
+            <CheckBox
+                p1:text="Di"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/checkBox2" />
+            <CheckBox
+                p1:text="Mi"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/checkBox3" />
+            <CheckBox
+                p1:text="Do"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/checkBox4" />
+            <CheckBox
+                p1:text="Fr"
+                p1:layout_width="wrap_content"
+                p1:layout_height="match_parent"
+                p1:id="@+id/checkBox5" />
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow3"
+        p1:layout_height="70.5dp"
+        p1:layout_width="372.5dp">
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:layout_column="1"
+            p1:id="@+id/linearLayout1"
+            p1:layout_height="48.5dp"
+            p1:layout_marginBottom="8.0dp"
+            p1:layout_width="345.5dp">
+            <Button
+                p1:text="Set"
+                p1:layout_width="80.5dp"
+                p1:layout_height="match_parent"
+                p1:id="@+id/button1" />
+            <Space
+                p1:layout_width="111.5dp"
+                p1:layout_height="match_parent"
+                p1:id="@+id/space2" />
+            <Space
+                p1:layout_width="78.0dp"
+                p1:layout_height="match_parent"
+                p1:id="@+id/space1" />
+            <Button
+                p1:text="Unset"
+                p1:layout_width="76.0dp"
+                p1:layout_height="match_parent"
+                p1:id="@+id/button2" />
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

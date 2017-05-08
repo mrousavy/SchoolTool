@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow1">
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2">
+            <TextView
+                android:text="Lautstärke: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/textView10" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_column="2"
+                android:id="@+id/linearLayout1"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:layout_width="255.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0.0dp" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout2">
+        <TableRow
+            android:id="@+id/tableRow4">
+            <TextView
+                android:text="Dynamischer Wecker:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView22"
+                android:layout_column="1" />
+            <ToggleButton
+                android:layout_column="3"
+                android:id="@+id/toggleButton1" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5">
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6">
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout3">
+        <TableRow
+            android:id="@+id/tableRow7">
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow8">
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow9">
+            <TextView
+                android:text="Falls eine Stunde entfallen sollte, kann Sie dieser Wecker"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="1"
+                android:id="@+id/textView33"
+                android:layout_height="19.5dp" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout4">
+        <TableRow
+            android:id="@+id/tableRow10">
+            <TextView
+                android:text="später wecken. Unser Wecker passt sich an Ihren"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="1"
+                android:id="@+id/textView34" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow11">
+            <TextView
+                android:text="Stundenplan an."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="1"
+                android:id="@+id/textView44" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow12">
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout5">
+        <TableRow
+            android:id="@+id/tableRow13">
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow14">
+            <TextView
+                android:text="Wie viele Stunden/Minuten möchten Sie später geweckt"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="1"
+                android:id="@+id/textView45" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow15">
+            <TextView
+                android:text="werden, falls eine Stunde entfällt?"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="1"
+                android:id="@+id/textView55" />
+        </TableRow>
+    </TableLayout>
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:timePickerMode="spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
