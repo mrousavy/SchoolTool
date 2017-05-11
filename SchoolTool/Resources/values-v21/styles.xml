@@ -11,9 +11,9 @@
   </style>
 
   <!--AppCompat Library Theme-->
-  <style name="Login" parent="android:Theme.AppCompat.Light.NoActionBar">
+  <style name="Login" parent="@style/Theme.AppCompat">
     <item name="android:colorPrimary">@color/orange_400</item>
     <item name="android:colorAccent">@color/orange_500</item>
-    <!--<item name="android:statusBarColor">@color/orange_600</item>-->
+    <item name="android:statusBarColor">@color/orange_600</item>
   </style>
 </resources>

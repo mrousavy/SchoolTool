@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.AppCompat.Light"
+    android:theme="@style/Theme.AppCompat"
     android:minWidth="25px"
     android:minHeight="25px">
 <!--Example-->

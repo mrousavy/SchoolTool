@@ -1900,8 +1900,8 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06002a
 			public const int bottom = 2131099690;
 			
-			// aapt resource value: 0x7f060070
-			public const int btnTest = 2131099760;
+			// aapt resource value: 0x7f060073
+			public const int btnTest = 2131099763;
 			
 			// aapt resource value: 0x7f06008e
 			public const int button1 = 2131099790;
@@ -2101,8 +2101,8 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060007
 			public const int progress_horizontal = 2131099655;
 			
-			// aapt resource value: 0x7f060073
-			public const int pw = 2131099763;
+			// aapt resource value: 0x7f060072
+			public const int pw = 2131099762;
 			
 			// aapt resource value: 0x7f060054
 			public const int radio = 2131099732;
@@ -2338,11 +2338,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060014
 			public const int useLogo = 2131099668;
 			
-			// aapt resource value: 0x7f060072
-			public const int username = 2131099762;
-			
 			// aapt resource value: 0x7f060071
-			public const int usernameWrapper = 2131099761;
+			public const int username = 2131099761;
+			
+			// aapt resource value: 0x7f060070
+			public const int usernameWrapper = 2131099760;
 			
 			// aapt resource value: 0x7f06000a
 			public const int view_offset_helper = 2131099658;
@@ -2506,49 +2506,52 @@ namespace SchoolTool
 			public const int design_navigation_menu_item = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int Main = 2130903076;
+			public const int login = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int notification_media_action = 2130903077;
+			public const int Main = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int notification_media_cancel_action = 2130903078;
+			public const int notification_media_action = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int notification_template_big_media = 2130903079;
+			public const int notification_media_cancel_action = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int notification_template_big_media_narrow = 2130903080;
+			public const int notification_template_big_media = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int notification_template_lines = 2130903081;
+			public const int notification_template_big_media_narrow = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_template_media = 2130903082;
+			public const int notification_template_lines = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_template_part_chronometer = 2130903083;
+			public const int notification_template_media = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_template_part_time = 2130903084;
+			public const int notification_template_part_chronometer = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int select_dialog_item_material = 2130903085;
+			public const int notification_template_part_time = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int select_dialog_multichoice_material = 2130903086;
+			public const int select_dialog_item_material = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int select_dialog_singlechoice_material = 2130903087;
+			public const int select_dialog_multichoice_material = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int support_simple_spinner_dropdown_item = 2130903088;
+			public const int select_dialog_singlechoice_material = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int Wecker = 2130903089;
+			public const int support_simple_spinner_dropdown_item = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int WeckerSettings = 2130903090;
+			public const int Wecker = 2130903090;
+			
+			// aapt resource value: 0x7f030033
+			public const int WeckerSettings = 2130903091;
 			
 			static Layout()
 			{
@@ -3109,6 +3112,9 @@ namespace SchoolTool
 			
 			// aapt resource value: 0x7f080148
 			public const int LessonNew = 2131231048;
+			
+			// aapt resource value: 0x7f08014b
+			public const int Login = 2131231051;
 			
 			// aapt resource value: 0x7f080013
 			public const int Platform_AppCompat = 2131230739;
