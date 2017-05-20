@@ -18,4 +18,10 @@
     <item name="cardBackgroundColor">@color/grey_500</item>
     <item name="cardCornerRadius">18dp</item>
   </style>
+
+  <!-- Loading/Login Screen Theme -->
+  <style name="Loading" parent="@style/Theme.AppCompat.NoActionBar">
+    <item name="android:colorPrimaryDark">@color/green_900</item>
+    <item name="android:windowBackground">@color/green_500</item>
+  </style>
 </resources>

@@ -10,10 +10,9 @@
     <!--<item name="android:statusBarColor">@color/orange_600</item>-->
   </style>
 
-  <!--AppCompat Library Theme-->
-  <style name="Login" parent="@style/Theme.AppCompat">
-    <item name="android:colorPrimary">@color/orange_400</item>
-    <item name="android:colorAccent">@color/orange_500</item>
-    <item name="android:statusBarColor">@color/orange_600</item>
+  <!-- Loading/Login Screen Theme -->
+  <style name="Loading" parent="@style/Theme.AppCompat.NoActionBar">
+    <item name="android:colorPrimaryDark">@color/green_900</item>
+    <item name="android:windowBackground">@color/green_500</item>
   </style>
 </resources>
