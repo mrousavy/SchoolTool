@@ -1849,8 +1849,8 @@ namespace SchoolTool
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060078
-			public const int action0 = 2131099768;
+			// aapt resource value: 0x7f06007c
+			public const int action0 = 2131099772;
 			
 			// aapt resource value: 0x7f06005a
 			public const int action_bar = 2131099738;
@@ -1876,8 +1876,8 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06005b
 			public const int action_context_bar = 2131099739;
 			
-			// aapt resource value: 0x7f06007c
-			public const int action_divider = 2131099772;
+			// aapt resource value: 0x7f060080
+			public const int action_divider = 2131099776;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -1909,20 +1909,20 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06002a
 			public const int bottom = 2131099690;
 			
-			// aapt resource value: 0x7f060074
-			public const int btnTest = 2131099764;
+			// aapt resource value: 0x7f060078
+			public const int btnTest = 2131099768;
 			
-			// aapt resource value: 0x7f060092
-			public const int button1 = 2131099794;
+			// aapt resource value: 0x7f060096
+			public const int button1 = 2131099798;
 			
-			// aapt resource value: 0x7f060095
-			public const int button2 = 2131099797;
+			// aapt resource value: 0x7f060099
+			public const int button2 = 2131099801;
 			
 			// aapt resource value: 0x7f060044
 			public const int buttonPanel = 2131099716;
 			
-			// aapt resource value: 0x7f060079
-			public const int cancel_action = 2131099769;
+			// aapt resource value: 0x7f06007d
+			public const int cancel_action = 2131099773;
 			
 			// aapt resource value: 0x7f06002b
 			public const int center = 2131099691;
@@ -1933,26 +1933,26 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06002d
 			public const int center_vertical = 2131099693;
 			
-			// aapt resource value: 0x7f06008b
-			public const int checkBox1 = 2131099787;
-			
-			// aapt resource value: 0x7f06008c
-			public const int checkBox2 = 2131099788;
-			
-			// aapt resource value: 0x7f06008d
-			public const int checkBox3 = 2131099789;
-			
-			// aapt resource value: 0x7f06008e
-			public const int checkBox4 = 2131099790;
-			
 			// aapt resource value: 0x7f06008f
-			public const int checkBox5 = 2131099791;
+			public const int checkBox1 = 2131099791;
+			
+			// aapt resource value: 0x7f060090
+			public const int checkBox2 = 2131099792;
+			
+			// aapt resource value: 0x7f060091
+			public const int checkBox3 = 2131099793;
+			
+			// aapt resource value: 0x7f060092
+			public const int checkBox4 = 2131099794;
+			
+			// aapt resource value: 0x7f060093
+			public const int checkBox5 = 2131099795;
 			
 			// aapt resource value: 0x7f060052
 			public const int checkbox = 2131099730;
 			
-			// aapt resource value: 0x7f06007f
-			public const int chronometer = 2131099775;
+			// aapt resource value: 0x7f060083
+			public const int chronometer = 2131099779;
 			
 			// aapt resource value: 0x7f060033
 			public const int clip_horizontal = 2131099699;
@@ -1965,9 +1965,6 @@ namespace SchoolTool
 			
 			// aapt resource value: 0x7f06004a
 			public const int contentPanel = 2131099722;
-			
-			// aapt resource value: 0x7f060073
-			public const int continue2 = 2131099763;
 			
 			// aapt resource value: 0x7f060050
 			public const int custom = 2131099728;
@@ -2002,8 +1999,8 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06001b
 			public const int end = 2131099675;
 			
-			// aapt resource value: 0x7f060084
-			public const int end_padder = 2131099780;
+			// aapt resource value: 0x7f060088
+			public const int end_padder = 2131099784;
 			
 			// aapt resource value: 0x7f060023
 			public const int enterAlways = 2131099683;
@@ -2047,8 +2044,8 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06003f
 			public const int image = 2131099711;
 			
-			// aapt resource value: 0x7f060083
-			public const int info = 2131099779;
+			// aapt resource value: 0x7f060087
+			public const int info = 2131099783;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
@@ -2056,17 +2053,17 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06002f
 			public const int left = 2131099695;
 			
-			// aapt resource value: 0x7f06007d
-			public const int line1 = 2131099773;
-			
 			// aapt resource value: 0x7f060081
-			public const int line3 = 2131099777;
+			public const int line1 = 2131099777;
 			
-			// aapt resource value: 0x7f060091
-			public const int linearLayout1 = 2131099793;
+			// aapt resource value: 0x7f060085
+			public const int line3 = 2131099781;
 			
-			// aapt resource value: 0x7f060089
-			public const int linearLayout2 = 2131099785;
+			// aapt resource value: 0x7f060095
+			public const int linearLayout1 = 2131099797;
+			
+			// aapt resource value: 0x7f06008d
+			public const int linearLayout2 = 2131099789;
 			
 			// aapt resource value: 0x7f06000b
 			public const int listMode = 2131099659;
@@ -2074,8 +2071,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060041
 			public const int list_item = 2131099713;
 			
-			// aapt resource value: 0x7f06007b
-			public const int media_actions = 2131099771;
+			// aapt resource value: 0x7f060070
+			public const int logo = 2131099760;
+			
+			// aapt resource value: 0x7f06007f
+			public const int media_actions = 2131099775;
 			
 			// aapt resource value: 0x7f06001c
 			public const int middle = 2131099676;
@@ -2113,11 +2113,14 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060007
 			public const int progress_horizontal = 2131099655;
 			
-			// aapt resource value: 0x7f060077
-			public const int pw = 2131099767;
+			// aapt resource value: 0x7f06007b
+			public const int pw = 2131099771;
 			
-			// aapt resource value: 0x7f060072
-			public const int pword = 2131099762;
+			// aapt resource value: 0x7f060075
+			public const int pwInput = 2131099765;
+			
+			// aapt resource value: 0x7f060076
+			public const int pword = 2131099766;
 			
 			// aapt resource value: 0x7f060054
 			public const int radio = 2131099732;
@@ -2125,8 +2128,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060030
 			public const int right = 2131099696;
 			
-			// aapt resource value: 0x7f060070
-			public const int school = 2131099760;
+			// aapt resource value: 0x7f060072
+			public const int school = 2131099762;
+			
+			// aapt resource value: 0x7f060071
+			public const int schoolInput = 2131099761;
 			
 			// aapt resource value: 0x7f060016
 			public const int screen = 2131099670;
@@ -2176,11 +2182,14 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060067
 			public const int search_voice_btn = 2131099751;
 			
-			// aapt resource value: 0x7f060097
-			public const int seekBar1 = 2131099799;
+			// aapt resource value: 0x7f06009b
+			public const int seekBar1 = 2131099803;
 			
 			// aapt resource value: 0x7f060068
 			public const int select_dialog_listview = 2131099752;
+			
+			// aapt resource value: 0x7f060077
+			public const int sendButton = 2131099767;
 			
 			// aapt resource value: 0x7f060053
 			public const int shortcut = 2131099731;
@@ -2203,11 +2212,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060027
 			public const int snap = 2131099687;
 			
-			// aapt resource value: 0x7f060094
-			public const int space1 = 2131099796;
+			// aapt resource value: 0x7f060098
+			public const int space1 = 2131099800;
 			
-			// aapt resource value: 0x7f060093
-			public const int space2 = 2131099795;
+			// aapt resource value: 0x7f060097
+			public const int space2 = 2131099799;
 			
 			// aapt resource value: 0x7f060045
 			public const int spacer = 2131099717;
@@ -2227,8 +2236,8 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060031
 			public const int start = 2131099697;
 			
-			// aapt resource value: 0x7f06007a
-			public const int status_bar_latest_event_content = 2131099770;
+			// aapt resource value: 0x7f06007e
+			public const int status_bar_latest_event_content = 2131099774;
 			
 			// aapt resource value: 0x7f060065
 			public const int submit_area = 2131099749;
@@ -2236,104 +2245,104 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06000d
 			public const int tabMode = 2131099661;
 			
-			// aapt resource value: 0x7f060085
-			public const int tableLayout1 = 2131099781;
-			
-			// aapt resource value: 0x7f060098
-			public const int tableLayout2 = 2131099800;
-			
-			// aapt resource value: 0x7f06009e
-			public const int tableLayout3 = 2131099806;
-			
-			// aapt resource value: 0x7f0600a3
-			public const int tableLayout4 = 2131099811;
-			
-			// aapt resource value: 0x7f0600a9
-			public const int tableLayout5 = 2131099817;
-			
-			// aapt resource value: 0x7f060086
-			public const int tableRow1 = 2131099782;
-			
-			// aapt resource value: 0x7f0600a4
-			public const int tableRow10 = 2131099812;
-			
-			// aapt resource value: 0x7f0600a6
-			public const int tableRow11 = 2131099814;
-			
-			// aapt resource value: 0x7f0600a8
-			public const int tableRow12 = 2131099816;
-			
-			// aapt resource value: 0x7f0600aa
-			public const int tableRow13 = 2131099818;
-			
-			// aapt resource value: 0x7f0600ab
-			public const int tableRow14 = 2131099819;
-			
-			// aapt resource value: 0x7f0600ad
-			public const int tableRow15 = 2131099821;
-			
-			// aapt resource value: 0x7f060088
-			public const int tableRow2 = 2131099784;
-			
-			// aapt resource value: 0x7f060090
-			public const int tableRow3 = 2131099792;
-			
-			// aapt resource value: 0x7f060099
-			public const int tableRow4 = 2131099801;
+			// aapt resource value: 0x7f060089
+			public const int tableLayout1 = 2131099785;
 			
 			// aapt resource value: 0x7f06009c
-			public const int tableRow5 = 2131099804;
+			public const int tableLayout2 = 2131099804;
+			
+			// aapt resource value: 0x7f0600a2
+			public const int tableLayout3 = 2131099810;
+			
+			// aapt resource value: 0x7f0600a7
+			public const int tableLayout4 = 2131099815;
+			
+			// aapt resource value: 0x7f0600ad
+			public const int tableLayout5 = 2131099821;
+			
+			// aapt resource value: 0x7f06008a
+			public const int tableRow1 = 2131099786;
+			
+			// aapt resource value: 0x7f0600a8
+			public const int tableRow10 = 2131099816;
+			
+			// aapt resource value: 0x7f0600aa
+			public const int tableRow11 = 2131099818;
+			
+			// aapt resource value: 0x7f0600ac
+			public const int tableRow12 = 2131099820;
+			
+			// aapt resource value: 0x7f0600ae
+			public const int tableRow13 = 2131099822;
+			
+			// aapt resource value: 0x7f0600af
+			public const int tableRow14 = 2131099823;
+			
+			// aapt resource value: 0x7f0600b1
+			public const int tableRow15 = 2131099825;
+			
+			// aapt resource value: 0x7f06008c
+			public const int tableRow2 = 2131099788;
+			
+			// aapt resource value: 0x7f060094
+			public const int tableRow3 = 2131099796;
 			
 			// aapt resource value: 0x7f06009d
-			public const int tableRow6 = 2131099805;
-			
-			// aapt resource value: 0x7f06009f
-			public const int tableRow7 = 2131099807;
+			public const int tableRow4 = 2131099805;
 			
 			// aapt resource value: 0x7f0600a0
-			public const int tableRow8 = 2131099808;
+			public const int tableRow5 = 2131099808;
 			
 			// aapt resource value: 0x7f0600a1
-			public const int tableRow9 = 2131099809;
+			public const int tableRow6 = 2131099809;
 			
-			// aapt resource value: 0x7f060082
-			public const int text = 2131099778;
+			// aapt resource value: 0x7f0600a3
+			public const int tableRow7 = 2131099811;
 			
-			// aapt resource value: 0x7f060080
-			public const int text2 = 2131099776;
+			// aapt resource value: 0x7f0600a4
+			public const int tableRow8 = 2131099812;
+			
+			// aapt resource value: 0x7f0600a5
+			public const int tableRow9 = 2131099813;
+			
+			// aapt resource value: 0x7f060086
+			public const int text = 2131099782;
+			
+			// aapt resource value: 0x7f060084
+			public const int text2 = 2131099780;
 			
 			// aapt resource value: 0x7f06004d
 			public const int textSpacerNoButtons = 2131099725;
 			
-			// aapt resource value: 0x7f060096
-			public const int textView10 = 2131099798;
-			
 			// aapt resource value: 0x7f06009a
-			public const int textView22 = 2131099802;
+			public const int textView10 = 2131099802;
 			
-			// aapt resource value: 0x7f0600a2
-			public const int textView33 = 2131099810;
+			// aapt resource value: 0x7f06009e
+			public const int textView22 = 2131099806;
 			
-			// aapt resource value: 0x7f0600a5
-			public const int textView34 = 2131099813;
+			// aapt resource value: 0x7f0600a6
+			public const int textView33 = 2131099814;
 			
-			// aapt resource value: 0x7f06008a
-			public const int textView4 = 2131099786;
+			// aapt resource value: 0x7f0600a9
+			public const int textView34 = 2131099817;
 			
-			// aapt resource value: 0x7f0600a7
-			public const int textView44 = 2131099815;
+			// aapt resource value: 0x7f06008e
+			public const int textView4 = 2131099790;
 			
-			// aapt resource value: 0x7f0600ac
-			public const int textView45 = 2131099820;
+			// aapt resource value: 0x7f0600ab
+			public const int textView44 = 2131099819;
 			
-			// aapt resource value: 0x7f0600ae
-			public const int textView55 = 2131099822;
+			// aapt resource value: 0x7f0600b0
+			public const int textView45 = 2131099824;
 			
-			// aapt resource value: 0x7f06007e
-			public const int time = 2131099774;
+			// aapt resource value: 0x7f0600b2
+			public const int textView55 = 2131099826;
 			
-			// aapt resource value: 0x7f060087
-			public const int timePicker1 = 2131099783;
+			// aapt resource value: 0x7f060082
+			public const int time = 2131099778;
+			
+			// aapt resource value: 0x7f06008b
+			public const int timePicker1 = 2131099787;
 			
 			// aapt resource value: 0x7f060043
 			public const int title = 2131099715;
@@ -2341,8 +2350,8 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060048
 			public const int title_template = 2131099720;
 			
-			// aapt resource value: 0x7f06009b
-			public const int toggleButton1 = 2131099803;
+			// aapt resource value: 0x7f06009f
+			public const int toggleButton1 = 2131099807;
 			
 			// aapt resource value: 0x7f060032
 			public const int top = 2131099698;
@@ -2350,8 +2359,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060047
 			public const int topPanel = 2131099719;
 			
-			// aapt resource value: 0x7f060071
-			public const int uname = 2131099761;
+			// aapt resource value: 0x7f060074
+			public const int uname = 2131099764;
+			
+			// aapt resource value: 0x7f060073
+			public const int unameInput = 2131099763;
 			
 			// aapt resource value: 0x7f060009
 			public const int up = 2131099657;
@@ -2359,11 +2371,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060014
 			public const int useLogo = 2131099668;
 			
-			// aapt resource value: 0x7f060076
-			public const int username = 2131099766;
+			// aapt resource value: 0x7f06007a
+			public const int username = 2131099770;
 			
-			// aapt resource value: 0x7f060075
-			public const int usernameWrapper = 2131099765;
+			// aapt resource value: 0x7f060079
+			public const int usernameWrapper = 2131099769;
 			
 			// aapt resource value: 0x7f06000a
 			public const int view_offset_helper = 2131099658;

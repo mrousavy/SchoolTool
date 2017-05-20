@@ -15,7 +15,7 @@ namespace SchoolTool
             base.OnCreate(bundle);
 
             // Changed for testing purposes
-            SetContentView(Resource.Layout.Loading);
+            SetContentView(Resource.Layout.Login);
         }
     }
 }
