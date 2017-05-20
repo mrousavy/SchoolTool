@@ -1,94 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:p1="http://schemas.android.com/apk/res/android"
-    p1:minWidth="25px"
-    p1:minHeight="25px"
-    p1:layout_width="match_parent"
-    p1:layout_height="match_parent"
-    p1:id="@+id/tableLayout1">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tableLayout1"
+    android:theme="@style/Theme.AppCompat">
+    <!--android:theme="@android:style/Theme.Material.Light.DarkActionBar"-->
+   
     <TableRow
-        p1:id="@+id/tableRow1"
-        p1:layout_height="343.0dp">
+        android:id="@+id/tableRow1"
+        android:layout_height="343.0dp"
+        android:gravity="center">
         <TimePicker
-            p1:layout_column="1"
-            p1:id="@+id/timePicker1"
-            p1:layout_marginBottom="12.0dp"
-            p1:minWidth="25px"
-            p1:minHeight="25px"
-            p1:numbersSelectorColor="#ffff8c00"
-            p1:numbersInnerTextColor="#ffff8c00"
-            p1:layout_height="351.0dp"
-            p1:layout_width="354.5dp" />
+            android:id="@+id/timePicker1"
+            android:layout_marginBottom="12.0dp"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:numbersSelectorColor="#ffff8c00"
+            android:numbersInnerTextColor="#ffff8c00"
+            android:layout_height="351.0dp"
+            android:layout_width="354.5dp">
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/timePicker2"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <TimePicker
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/timePicker3" />
+            </TimePicker>
+        </TimePicker>
     </TableRow>
     <TableRow
-        p1:id="@+id/tableRow2">
+        android:id="@+id/tableRow2"
+        android:gravity="center">
         <LinearLayout
-            p1:orientation="horizontal"
-            p1:layout_column="1"
-            p1:id="@+id/linearLayout2">
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2">
             <TextView
-                p1:text="Tage auswählen:"
-                p1:textAppearance="?android:attr/textAppearanceSmall"
-                p1:layout_width="wrap_content"
-                p1:layout_height="23.0dp"
-                p1:id="@+id/textView4"
-                p1:layout_marginBottom="16.5dp"
-                p1:layout_marginTop="9.5dp" />
+                android:text="Tage auswählen:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="26.0dp"
+                android:id="@+id/textView5" />
             <CheckBox
-                p1:text="Mo"
-                p1:layout_width="wrap_content"
-                p1:layout_height="match_parent"
-                p1:id="@+id/checkBox1" />
+                android:text="Mo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/checkBox1" />
             <CheckBox
-                p1:text="Di"
-                p1:layout_width="wrap_content"
-                p1:layout_height="match_parent"
-                p1:id="@+id/checkBox2" />
+                android:text="Di"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/checkBox2" />
             <CheckBox
-                p1:text="Mi"
-                p1:layout_width="wrap_content"
-                p1:layout_height="match_parent"
-                p1:id="@+id/checkBox3" />
+                android:text="Mi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/checkBox3" />
             <CheckBox
-                p1:text="Do"
-                p1:layout_width="wrap_content"
-                p1:layout_height="match_parent"
-                p1:id="@+id/checkBox4" />
+                android:text="Do"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/checkBox4" />
             <CheckBox
-                p1:text="Fr"
-                p1:layout_width="wrap_content"
-                p1:layout_height="match_parent"
-                p1:id="@+id/checkBox5" />
+                android:text="Fr"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/checkBox5" />
         </LinearLayout>
     </TableRow>
     <TableRow
-        p1:id="@+id/tableRow3"
-        p1:layout_height="70.5dp"
-        p1:layout_width="372.5dp">
+        android:id="@+id/tableRow3"
+        android:layout_height="70.5dp"
+        android:layout_width="372.5dp"
+        android:gravity="center">
         <LinearLayout
-            p1:orientation="horizontal"
-            p1:layout_column="1"
-            p1:id="@+id/linearLayout1"
-            p1:layout_height="48.5dp"
-            p1:layout_marginBottom="8.0dp"
-            p1:layout_width="345.5dp">
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout1"
+            android:layout_height="48.5dp"
+            android:layout_marginBottom="8.0dp"
+            android:layout_width="345.5dp">
             <Button
-                p1:text="Set"
-                p1:layout_width="80.5dp"
-                p1:layout_height="match_parent"
-                p1:id="@+id/button1" />
+                android:text="Set"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/button3" />
             <Space
-                p1:layout_width="111.5dp"
-                p1:layout_height="match_parent"
-                p1:id="@+id/space2" />
+                android:layout_width="111.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/space2" />
             <Space
-                p1:layout_width="78.0dp"
-                p1:layout_height="match_parent"
-                p1:id="@+id/space1" />
+                android:layout_width="78.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/space1" />
             <Button
-                p1:text="Unset"
-                p1:layout_width="76.0dp"
-                p1:layout_height="match_parent"
-                p1:id="@+id/button2" />
+                android:text="Unset"
+                android:layout_width="80.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/button1" />
+            <Button
+                android:text="Unset"
+                android:layout_width="76.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/button2" />
         </LinearLayout>
     </TableRow>
 </TableLayout>
