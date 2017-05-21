@@ -6,60 +6,61 @@
     <ImageView
         android:id="@+id/logo"
         android:src="@drawable/logotransparent"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
         android:layout_width="match_parent"
         android:layout_height="150dp" />
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/schoolInput"
+        android:id="@+id/school"
         android:layout_below="@id/logo"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/school"
+            android:id="@+id/schoolInput"
             android:hint="@string/school"
             android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/unameInput"
-        android:layout_below="@id/schoolInput"
+        android:id="@+id/uname"
+        android:layout_below="@id/school"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/uname"
+            android:id="@+id/unameInput"
             android:hint="@string/username"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/pwInput"
-        android:layout_below="@id/unameInput"
+        android:id="@+id/pword"
+        android:layout_below="@id/uname"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/pword"
+            android:id="@+id/pwordInput"
             android:inputType="textPassword"
             android:hint="@string/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
-<!--Not done yet-->
+<!-- Not done yet-->
     <ImageButton
         android:id="@+id/sendButton"
+        android:background="@null"
+        android:src="@drawable/ic_keyboard_arrow_right_white_48dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="30dp"
-        android:src="@android:drawable/ic_menu_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </RelativeLayout>

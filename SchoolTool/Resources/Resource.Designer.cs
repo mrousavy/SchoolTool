@@ -985,32 +985,32 @@ namespace SchoolTool
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f070052
-			public const int abc_background_cache_hint_selector_material_dark = 2131165266;
-			
 			// aapt resource value: 0x7f070053
-			public const int abc_background_cache_hint_selector_material_light = 2131165267;
+			public const int abc_background_cache_hint_selector_material_dark = 2131165267;
 			
 			// aapt resource value: 0x7f070054
-			public const int abc_color_highlight_material = 2131165268;
+			public const int abc_background_cache_hint_selector_material_light = 2131165268;
+			
+			// aapt resource value: 0x7f070055
+			public const int abc_color_highlight_material = 2131165269;
 			
 			// aapt resource value: 0x7f070004
 			public const int abc_input_method_navigation_guard = 2131165188;
 			
-			// aapt resource value: 0x7f070055
-			public const int abc_primary_text_disable_only_material_dark = 2131165269;
-			
 			// aapt resource value: 0x7f070056
-			public const int abc_primary_text_disable_only_material_light = 2131165270;
+			public const int abc_primary_text_disable_only_material_dark = 2131165270;
 			
 			// aapt resource value: 0x7f070057
-			public const int abc_primary_text_material_dark = 2131165271;
+			public const int abc_primary_text_disable_only_material_light = 2131165271;
 			
 			// aapt resource value: 0x7f070058
-			public const int abc_primary_text_material_light = 2131165272;
+			public const int abc_primary_text_material_dark = 2131165272;
 			
 			// aapt resource value: 0x7f070059
-			public const int abc_search_url_text = 2131165273;
+			public const int abc_primary_text_material_light = 2131165273;
+			
+			// aapt resource value: 0x7f07005a
+			public const int abc_search_url_text = 2131165274;
 			
 			// aapt resource value: 0x7f070005
 			public const int abc_search_url_text_normal = 2131165189;
@@ -1021,11 +1021,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f070007
 			public const int abc_search_url_text_selected = 2131165191;
 			
-			// aapt resource value: 0x7f07005a
-			public const int abc_secondary_text_material_dark = 2131165274;
-			
 			// aapt resource value: 0x7f07005b
-			public const int abc_secondary_text_material_light = 2131165275;
+			public const int abc_secondary_text_material_dark = 2131165275;
+			
+			// aapt resource value: 0x7f07005c
+			public const int abc_secondary_text_material_light = 2131165276;
 			
 			// aapt resource value: 0x7f070008
 			public const int accent_material_dark = 2131165192;
@@ -1045,8 +1045,8 @@ namespace SchoolTool
 			// aapt resource value: 0x7f07000d
 			public const int background_material_light = 2131165197;
 			
-			// aapt resource value: 0x7f070050
-			public const int black = 2131165264;
+			// aapt resource value: 0x7f070051
+			public const int black = 2131165265;
 			
 			// aapt resource value: 0x7f07000e
 			public const int bright_foreground_disabled_material_dark = 2131165198;
@@ -1139,13 +1139,16 @@ namespace SchoolTool
 			public const int green_700 = 2131165260;
 			
 			// aapt resource value: 0x7f07004d
-			public const int green_900 = 2131165261;
+			public const int green_800 = 2131165261;
 			
 			// aapt resource value: 0x7f07004e
-			public const int grey_400 = 2131165262;
+			public const int green_900 = 2131165262;
 			
 			// aapt resource value: 0x7f07004f
-			public const int grey_500 = 2131165263;
+			public const int grey_400 = 2131165263;
+			
+			// aapt resource value: 0x7f070050
+			public const int grey_500 = 2131165264;
 			
 			// aapt resource value: 0x7f07001c
 			public const int highlighted_text_material_dark = 2131165212;
@@ -1252,11 +1255,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f07003b
 			public const int switch_thumb_disabled_material_light = 2131165243;
 			
-			// aapt resource value: 0x7f07005c
-			public const int switch_thumb_material_dark = 2131165276;
-			
 			// aapt resource value: 0x7f07005d
-			public const int switch_thumb_material_light = 2131165277;
+			public const int switch_thumb_material_dark = 2131165277;
+			
+			// aapt resource value: 0x7f07005e
+			public const int switch_thumb_material_light = 2131165278;
 			
 			// aapt resource value: 0x7f07003c
 			public const int switch_thumb_normal_material_dark = 2131165244;
@@ -1264,8 +1267,8 @@ namespace SchoolTool
 			// aapt resource value: 0x7f07003d
 			public const int switch_thumb_normal_material_light = 2131165245;
 			
-			// aapt resource value: 0x7f070051
-			public const int white = 2131165265;
+			// aapt resource value: 0x7f070052
+			public const int white = 2131165266;
 			
 			static Color()
 			{
@@ -1828,13 +1831,19 @@ namespace SchoolTool
 			public const int design_snackbar_background = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int Icon = 2130837575;
+			public const int ic_keyboard_arrow_right_white_48dp = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int LogoTransparent = 2130837576;
+			public const int ic_send_white_48dp = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int notification_template_icon_bg = 2130837577;
+			public const int Icon = 2130837577;
+			
+			// aapt resource value: 0x7f02004a
+			public const int logotransparent = 2130837578;
+			
+			// aapt resource value: 0x7f02004b
+			public const int notification_template_icon_bg = 2130837579;
 			
 			static Drawable()
 			{
@@ -2117,10 +2126,10 @@ namespace SchoolTool
 			public const int pw = 2131099771;
 			
 			// aapt resource value: 0x7f060075
-			public const int pwInput = 2131099765;
+			public const int pword = 2131099765;
 			
 			// aapt resource value: 0x7f060076
-			public const int pword = 2131099766;
+			public const int pwordInput = 2131099766;
 			
 			// aapt resource value: 0x7f060054
 			public const int radio = 2131099732;
@@ -2128,11 +2137,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060030
 			public const int right = 2131099696;
 			
-			// aapt resource value: 0x7f060072
-			public const int school = 2131099762;
-			
 			// aapt resource value: 0x7f060071
-			public const int schoolInput = 2131099761;
+			public const int school = 2131099761;
+			
+			// aapt resource value: 0x7f060072
+			public const int schoolInput = 2131099762;
 			
 			// aapt resource value: 0x7f060016
 			public const int screen = 2131099670;
@@ -2359,11 +2368,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060047
 			public const int topPanel = 2131099719;
 			
-			// aapt resource value: 0x7f060074
-			public const int uname = 2131099764;
-			
 			// aapt resource value: 0x7f060073
-			public const int unameInput = 2131099763;
+			public const int uname = 2131099763;
+			
+			// aapt resource value: 0x7f060074
+			public const int unameInput = 2131099764;
 			
 			// aapt resource value: 0x7f060009
 			public const int up = 2131099657;
