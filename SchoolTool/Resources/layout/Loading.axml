@@ -2,11 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Loading">
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:background="@color/green_500">
     <ImageView
         android:src="@drawable/logotransparent"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:layout_height="150dp"
-        android:layout_width="150dp" />
+        android:paddingTop="150dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
 </RelativeLayout>

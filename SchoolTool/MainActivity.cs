@@ -7,15 +7,15 @@ using WebUntisSharp;
 
 namespace SchoolTool
 {
-    [Activity(Label = "SchoolTool", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "SchoolTool", MainLauncher = true, Icon = "@drawable/logo")]
     public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            // Changed for testing purposes
-            SetContentView(Resource.Layout.Login);
+            //TODO: Testing Purposes
+            SetContentView(Resource.Layout.Loading);
         }
     }
 }

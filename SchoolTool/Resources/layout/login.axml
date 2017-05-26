@@ -6,10 +6,12 @@
     <ImageView
         android:id="@+id/logo"
         android:src="@drawable/logotransparent"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        android:paddingTop="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
     <android.support.design.widget.TextInputLayout
         android:id="@+id/school"
         android:layout_below="@id/logo"
@@ -52,9 +54,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
-<!-- Not done yet-->
+<!-- TODO: Implement Method for onClick -->
     <ImageButton
         android:id="@+id/sendButton"
+        android:clickable="true"
+        android:onClick="MethodName"
         android:background="@null"
         android:src="@drawable/ic_keyboard_arrow_right_white_48dp"
         android:layout_alignParentBottom="true"
