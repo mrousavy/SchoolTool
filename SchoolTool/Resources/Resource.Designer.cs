@@ -1921,7 +1921,7 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060078
 			public const int btnTest = 2131099768;
 			
-			// aapt resource value: 0x7f060096
+      // aapt resource value: 0x7f060096
 			public const int button1 = 2131099798;
 			
 			// aapt resource value: 0x7f060099
@@ -2191,9 +2191,9 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060067
 			public const int search_voice_btn = 2131099751;
 			
-			// aapt resource value: 0x7f06009b
+      // aapt resource value: 0x7f06009b
 			public const int seekBar1 = 2131099803;
-			
+      
 			// aapt resource value: 0x7f060068
 			public const int select_dialog_listview = 2131099752;
 			
@@ -2221,12 +2221,12 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060027
 			public const int snap = 2131099687;
 			
-			// aapt resource value: 0x7f060098
-			public const int space1 = 2131099800;
+      // aapt resource value: 0x7f060092
+			public const int space1 = 2131099794;
 			
-			// aapt resource value: 0x7f060097
-			public const int space2 = 2131099799;
-			
+			// aapt resource value: 0x7f060091
+			public const int space2 = 2131099793;
+      
 			// aapt resource value: 0x7f060045
 			public const int spacer = 2131099717;
 			
@@ -2253,8 +2253,8 @@ namespace SchoolTool
 			
 			// aapt resource value: 0x7f06000d
 			public const int tabMode = 2131099661;
-			
-			// aapt resource value: 0x7f060089
+
+      // aapt resource value: 0x7f060089
 			public const int tableLayout1 = 2131099785;
 			
 			// aapt resource value: 0x7f06009c
@@ -2265,11 +2265,11 @@ namespace SchoolTool
 			
 			// aapt resource value: 0x7f0600a7
 			public const int tableLayout4 = 2131099815;
-			
+
 			// aapt resource value: 0x7f0600ad
 			public const int tableLayout5 = 2131099821;
 			
-			// aapt resource value: 0x7f06008a
+      // aapt resource value: 0x7f06008a
 			public const int tableRow1 = 2131099786;
 			
 			// aapt resource value: 0x7f0600a8
@@ -2310,8 +2310,8 @@ namespace SchoolTool
 			
 			// aapt resource value: 0x7f0600a4
 			public const int tableRow8 = 2131099812;
-			
-			// aapt resource value: 0x7f0600a5
+
+      // aapt resource value: 0x7f0600a5
 			public const int tableRow9 = 2131099813;
 			
 			// aapt resource value: 0x7f060086
@@ -2323,7 +2323,7 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06004d
 			public const int textSpacerNoButtons = 2131099725;
 			
-			// aapt resource value: 0x7f06009a
+      // aapt resource value: 0x7f06009a
 			public const int textView10 = 2131099802;
 			
 			// aapt resource value: 0x7f06009e
@@ -2343,8 +2343,8 @@ namespace SchoolTool
 			
 			// aapt resource value: 0x7f0600b0
 			public const int textView45 = 2131099824;
-			
-			// aapt resource value: 0x7f0600b2
+
+      // aapt resource value: 0x7f0600b2
 			public const int textView55 = 2131099826;
 			
 			// aapt resource value: 0x7f060082
@@ -2353,15 +2353,21 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06008b
 			public const int timePicker1 = 2131099787;
 			
+			// aapt resource value: 0x7f060084
+			public const int timePicker2 = 2131099780;
+			
+			// aapt resource value: 0x7f060085
+			public const int timePicker3 = 2131099781;
+			
 			// aapt resource value: 0x7f060043
 			public const int title = 2131099715;
 			
 			// aapt resource value: 0x7f060048
 			public const int title_template = 2131099720;
 			
-			// aapt resource value: 0x7f06009f
+      // aapt resource value: 0x7f06009f
 			public const int toggleButton1 = 2131099807;
-			
+
 			// aapt resource value: 0x7f060032
 			public const int top = 2131099698;
 			
@@ -3490,6 +3496,12 @@ namespace SchoolTool
 			
 			// aapt resource value: 0x7f08014d
 			public const int UntisMaterialTheme = 2131231053;
+			
+			// aapt resource value: 0x7f08014c
+			public const int Wecker = 2131231052;
+			
+			// aapt resource value: 0x7f08014d
+			public const int WeckerSettings = 2131231053;
 			
 			// aapt resource value: 0x7f0800f2
 			public const int Widget_AppCompat_ActionBar = 2131230962;

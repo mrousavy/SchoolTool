@@ -39,4 +39,14 @@
     <item name="android:background">@color/white</item>
     <item name="android:textColorPrimary">@color/white</item>
   </style>
+  <style name="Wecker" parent="@style/Theme.AppCompat">
+    <item name="android:colorPrimary">@color/orange_400</item>
+    <item name="android:colorAccent">@color/orange_500</item>
+    <item name="android:statusBarColor">@color/orange_600</item>
+  </style>
+  <style name="WeckerSettings" parent="@style/Theme.AppCompat">
+    <item name="android:colorPrimary">@color/orange_400</item>
+    <item name="android:colorAccent">@color/orange_500</item>
+    <item name="android:statusBarColor">@color/orange_600</item>
+  </style>
 </resources>
