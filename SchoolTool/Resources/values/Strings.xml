@@ -4,6 +4,9 @@
   <string name="alarm">Alarm</string>
   <string name="language">Language  </string>
   <string name="account">Account</string>
+  <string name="username">Username</string>
+  <string name="password">Password</string>
+  <string name="school">School</string>
   
   <string name="Hello">Hello World, Click Me!</string>
 </resources>
