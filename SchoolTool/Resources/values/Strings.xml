@@ -7,6 +7,11 @@
   <string name="username">Username</string>
   <string name="password">Password</string>
   <string name="school">School</string>
-  
+  <string name="login">Login</string>
+  <string name="logout">Logout</string>
+  <string name="credits">SchoolTool 2017</string>
+  <string name="changeInTimetable">Notify on Timetable Changes</string>
+  <string name="favouriteTimetable">Favourite Timetable</string>
+  <string name="startingTimetable">Starting Timetable</string>
   <string name="Hello">Hello World, Click Me!</string>
 </resources>
