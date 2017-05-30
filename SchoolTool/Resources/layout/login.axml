@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:theme="@style/Loading"
+    android:background="@color/green_500"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
@@ -54,11 +54,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
-<!-- TODO: Implement Method for onClick -->
     <ImageButton
         android:id="@+id/sendButton"
         android:clickable="true"
-        android:onClick="MethodName"
+        android:onClick="Login"
         android:background="@null"
         android:src="@drawable/ic_keyboard_arrow_right_white_48dp"
         android:layout_alignParentBottom="true"

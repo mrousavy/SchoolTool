@@ -12,10 +12,13 @@ namespace SchoolTool
     {
         protected override void OnCreate(Bundle bundle)
         {
+            // Has to be set before Activity is created
+            SetTheme(Resource.Style.SchoolToolDefault);
+
             base.OnCreate(bundle);
 
-            //TODO: Testing Purposes
-            SetContentView(Resource.Layout.Loading);
+            //TODO: Testing Purposes            
+            SetContentView(Resource.Layout.Settings);
         }
     }
 }
