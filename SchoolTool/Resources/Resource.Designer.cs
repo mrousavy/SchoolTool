@@ -1982,7 +1982,7 @@ namespace SchoolTool
 			public const int contentPanel = 2131099722;
 			
 			// aapt resource value: 0x7f060092
-			public const int credits = 2131099794;
+			public const int creditsText = 2131099794;
 			
 			// aapt resource value: 0x7f060050
 			public const int custom = 2131099728;

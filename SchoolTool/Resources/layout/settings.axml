@@ -89,7 +89,7 @@
         android:text="@string/logout"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp"
-        android:layout_above="@id/credits"
+        android:layout_above="@id/creditsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true" />
