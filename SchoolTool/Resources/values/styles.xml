@@ -39,8 +39,8 @@
   </style>
 
   <!-- TODO: Default Design -->
-  <style name="SchoolToolDefault" parent="style/Theme.AppCompat">
-    <item name="android:background">@color/white</item>
+  <style name="SchoolToolDefault" parent="style/Theme.AppCompat.Light">
+    <item name="colorPrimary">@color/green_500</item>
     <item name="android:textColorPrimary">@color/white</item>
   </style>
   <!-- /TODO -->  
