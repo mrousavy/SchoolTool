@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:theme="@style/SchoolToolDefault"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:id="@+id/favouriteTimetableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/favouriteTimetableTitle"
+            android:text="@string/favouriteTimetable"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:gravity="bottom"
+            android:layout_height="37dp"
+            android:layout_width="match_parent" />
+        <TextView
+            android:id="@+id/favouriteTimetableOutput"
+            android:layout_below="@id/favouriteTimetableTitle"
+            android:textColor="@color/grey_500"
+            android:text="n/a"
+            android:gravity="top"
+            android:layout_height="37dp"
+            android:layout_width="match_parent" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/divider1"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/green_700"
+        android:layout_below="@id/favouriteTimetableLayout" />
+    <RelativeLayout
+        android:id="@+id/startingTimetableLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/divider1"
+        android:layout_height="74dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/startingTimetableTitle"
+            android:text="@string/startingTimetable"
+            android:textSize="18dp"
+            android:gravity="bottom"
+            android:textColor="@color/black"
+            android:layout_height="37dp"
+            android:layout_width="match_parent" />
+        <TextView
+            android:id="@+id/startingTimetableOutput"
+            android:text="n/a"
+            android:gravity="top"
+            android:textColor="@color/grey_500"
+            android:layout_height="37dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/startingTimetableTitle" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/divider2"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/green_700"
+        android:layout_below="@id/startingTimetableLayout" />
+    <Switch
+        android:id="@+id/changeInTimetableSwitch"
+        android:text="@string/changeInTimetable"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:trackTint="@color/green_500"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="74dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/divider2" />
+    <TextView
+        android:id="@+id/credits"
+        android:text="@string/credits"
+        android:textColor="@color/grey_500"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    <Button
+        android:onClick="Logout"
+        android:text="@string/logout"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -3,10 +3,14 @@
   <string name="ApplicationName">SchoolTool</string>
   <string name="alarm">Wecker</string>
   <string name="language">Sprache </string>
-  <string name="account">Account</string>
   <string name="username">Benutzername</string>
   <string name="password">Passwort</string>
   <string name="school">Schule</string>
+  <string name="login">Anmelden</string>
+  <string name="logout">Abmelden</string>
+  <string name="changeInTimetable">Bei Stundenplanänderung benachrichtigen</string>
+  <string name="favouriteTimetable">Lieblingsstundenplan</string>
+  <string name="startingTimetable">Startstundenplan</string>
   
   <string name="Hello">Hallo Welt, Klick mich!</string>
 </resources>
