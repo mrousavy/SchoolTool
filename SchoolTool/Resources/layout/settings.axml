@@ -76,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_below="@id/divider2" />
     <TextView
-        android:id="@+id/credits"
+        android:id="@+id/creditsText"
         android:text="@string/credits"
         android:textColor="@color/grey_500"
         android:gravity="center_horizontal"
@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true" />
     <Button
-        android:onClick="Logout"
+        android:onClick="LogoutButton"
         android:text="@string/logout"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp"

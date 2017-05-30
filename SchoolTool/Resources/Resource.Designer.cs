@@ -2104,6 +2104,9 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060041
 			public const int list_item = 2131099713;
 			
+			// aapt resource value: 0x7f060077
+			public const int loginButton = 2131099767;
+			
 			// aapt resource value: 0x7f060070
 			public const int logo = 2131099760;
 			
@@ -2220,9 +2223,6 @@ namespace SchoolTool
 			
 			// aapt resource value: 0x7f060068
 			public const int select_dialog_listview = 2131099752;
-			
-			// aapt resource value: 0x7f060077
-			public const int sendButton = 2131099767;
 			
 			// aapt resource value: 0x7f060053
 			public const int shortcut = 2131099731;

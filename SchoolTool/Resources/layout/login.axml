@@ -55,7 +55,7 @@
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
     <ImageButton
-        android:id="@+id/sendButton"
+        android:id="@+id/loginButton"
         android:clickable="true"
         android:onClick="Login"
         android:background="@null"
