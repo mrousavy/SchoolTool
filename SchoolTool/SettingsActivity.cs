@@ -38,11 +38,15 @@ namespace SchoolTool
             //output of starting timetable
             TextView startingTimetableOutput = FindViewById<TextView>(Resource.Id.startingTimetableOutput);
 
+            //logout button - calls Logout on Click
+            Button logout = FindViewById<Button>(Resource.Id.logoutButton);
+
+            //TODO: *NEW* when clicking on logout button it should logout, and open the login screen
 
             //TODO: misc - populate string array with all classes from school
 
             //TODO: switch - if turned on enable notifications on timetable changes if off then otherwise
-            //TODO: alarm - when clicked on the textview open alarm window
+            //TODO: alarm  - when clicked on the textview open alarm window
             //TODO: favourite timetable layout - when clicked on this layout it should open a popup with a searchbar and all classes to choose
             //TODO: favourite timetable output - when class is chosen it should be displayed in this textview
             //TODO: starting timetable layout  - when clicked on this layout it should open a popup with 2 radiobuttons, 1 for last viewed and 1 for favourite class
