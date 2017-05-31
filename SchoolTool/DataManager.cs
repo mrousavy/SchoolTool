@@ -68,6 +68,26 @@ namespace SchoolTool {
                 }
             }
         }
+        internal bool NotifyChanges {
+            get {
+                bool value;
+                using (ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(_context)) {
+                    value = prefs.GetBoolean("notifychanges", true);
+                }
+
+                return value;
+            }
+            set {
+                using (ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(_context)) {
+                    using (ISharedPreferencesEditor editor = prefs.Edit()) {
+
+                        editor.PutBoolean("schoolurl", value);
+
+                        editor.Apply();
+                    }
+                }
+            }
+        }
 
         internal DataManager(Context context) {
             _context = context;
