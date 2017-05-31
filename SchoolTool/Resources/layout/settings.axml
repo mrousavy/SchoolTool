@@ -3,7 +3,6 @@
     android:theme="@style/SchoolToolDefault"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:minWidth="25px"
     android:minHeight="25px">
     <RelativeLayout
@@ -76,8 +75,25 @@
         android:layout_height="74dp"
         android:layout_width="match_parent"
         android:layout_below="@id/divider2" />
+    <View
+        android:id="@+id/divider3"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/green_700"
+        android:layout_below="@id/changeInTimetableSwitch" />
     <TextView
-        android:id="@+id/credits"
+        android:id="@+id/alarmTextView"
+        android:text="@string/alarm"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/divider3"
+        android:textColor="@color/black"
+        android:layout_height="72dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:id="@+id/creditsText"
         android:text="@string/credits"
         android:textColor="@color/grey_500"
         android:gravity="center_horizontal"
@@ -86,11 +102,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true" />
     <Button
-        android:onClick="Logout"
+        android:onClick="LogoutButton"
         android:text="@string/logout"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp"
-        android:layout_above="@id/credits"
+        android:layout_above="@id/creditsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true" />
