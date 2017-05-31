@@ -80,6 +80,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlarmActivity.cs" />
     <Compile Include="Cipher.cs" />
     <Compile Include="DataManager.cs" />
     <Compile Include="MainActivity.cs" />
@@ -109,6 +110,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Settings.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Alarm.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
