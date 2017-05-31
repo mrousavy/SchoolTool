@@ -36,6 +36,11 @@ namespace SchoolTool {
             startingTimetableLayout.Click += StartingTimetableLayout_Click;
 
 
+            //logout button - calls Logout on Click
+            Button logout = FindViewById<Button>(Resource.Id.logoutButton);
+
+            //TODO: *NEW* when clicking on logout button it should logout, and open the login screen
+            
             _dataman = new DataManager(this);
 
             LoadClasses();
