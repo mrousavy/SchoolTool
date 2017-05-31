@@ -32,7 +32,7 @@
   <!-- TODO: Default Design -->
   <style name="SchoolToolDefault" parent="style/Theme.AppCompat.Light">
     <item name="colorPrimary">@color/green_500</item>
-    <item name="android:textColorPrimary">@color/white</item>
+    <item name="android:textColorPrimary">@color/black</item>
   </style>
   <!-- /TODO -->
   
