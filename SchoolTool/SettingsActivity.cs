@@ -1,52 +1,71 @@
+using Android.App;
+using Android.OS;
+using Android.Support.V7.App;
+using Android.Widget;
+using mrousavy.APIs.WebUntisSharp.WebUnitsJsonSchemes.Classes;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-using Android.Support.V7.App;
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-
-namespace SchoolTool
-{
+namespace SchoolTool {
     [Activity(Theme = "@style/SchoolToolDefault", Label = "SettingsActivity")]
-    public class SettingsActivity : AppCompatActivity
-    {
-        protected override void OnCreate(Bundle savedInstanceState)
-        {
+    public class SettingsActivity : AppCompatActivity {
+        private DataManager _dataman;
+        private List<Class> _classes;
+
+        protected override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Settings);
 
             //The switch to turn notifications on or off
             Switch notifier = FindViewById<Switch>(Resource.Id.changeInTimetableSwitch);
-            
+            notifier.CheckedChange += Notifier_CheckedChange;
+
             //alarm TextView
             TextView alarm = FindViewById<TextView>(Resource.Id.alarmTextView);
+            alarm.Click += delegate {
+                StartActivity(typeof(WeckerActivity));
+            };
 
             //favourite timetable layout
             RelativeLayout favouriteTimetableLayout = FindViewById<RelativeLayout>(Resource.Id.favouriteTimetableLayout);
-            //output of the favourite timetable
-            TextView favouriteTimetableOutput = FindViewById<TextView>(Resource.Id.favouriteTimetableOutput);
+            favouriteTimetableLayout.Click += FavouriteTimetableLayout_Click;
 
             //starting timetable layout
             RelativeLayout startingTimetableLayout = FindViewById<RelativeLayout>(Resource.Id.startingTimetableLayout);
-            //output of starting timetable
-            TextView startingTimetableOutput = FindViewById<TextView>(Resource.Id.startingTimetableOutput);
+            startingTimetableLayout.Click += StartingTimetableLayout_Click;
 
 
-            //TODO: misc - populate string array with all classes from school
+            _dataman = new DataManager(this);
 
-            //TODO: switch - if turned on enable notifications on timetable changes if off then otherwise
-            //TODO: alarm - when clicked on the textview open alarm window
-            //TODO: favourite timetable layout - when clicked on this layout it should open a popup with a searchbar and all classes to choose
-            //TODO: favourite timetable output - when class is chosen it should be displayed in this textview
-            //TODO: starting timetable layout  - when clicked on this layout it should open a popup with 2 radiobuttons, 1 for last viewed and 1 for favourite class
-            //TODO: starting timetable output  - when option is chosen it should be displayed in this textview
+            LoadClasses();
+        }
+
+        private async void LoadClasses() {
+            try {
+                int schoolyear = (await StaticWebUntis.Untis.GetSchoolyear()).id;
+                _classes = await StaticWebUntis.Untis.GetClasses(schoolyear.ToString());
+            } catch (Exception e) {
+                Toast.MakeText(this, "Error loading classes: " + e, ToastLength.Long).Show();
+            }
+        }
+
+        private void StartingTimetableLayout_Click(object sender, System.EventArgs e) {
+            //TODO: open picker layout
+
+            //TODO: set TextView text
+            //TextView favouriteTimetableOutput = FindViewById<TextView>(Resource.Id.favouriteTimetableOutput);
+        }
+
+        private void FavouriteTimetableLayout_Click(object sender, System.EventArgs e) {
+            //TODO: open picker layout
+
+            //TODO: set TextView text
+            //FindViewById<TextView>(Resource.Id.startingTimetableOutput);
+        }
+
+        private void Notifier_CheckedChange(object sender, CompoundButton.CheckedChangeEventArgs e) {
+            _dataman.NotifyChanges = e.IsChecked;
         }
     }
 }

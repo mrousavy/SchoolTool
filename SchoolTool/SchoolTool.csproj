@@ -82,15 +82,13 @@
   <ItemGroup>
     <Compile Include="Cipher.cs" />
     <Compile Include="DataManager.cs" />
-    <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingsActivity.cs" />
-    <Compile Include="SharedPreferences.cs" />
-    <Compile Include="SharedPreferencesEditor.cs" />
     <Compile Include="StaticWebUntis.cs" />
     <Compile Include="TimetableActivity.cs" />
+    <Compile Include="WeckerActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
