@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/tableLayout1"
     android:theme="@style/Theme.AppCompat">
-    <!--android:theme="@android:style/Theme.Material.Light.DarkActionBar"-->
-   
+<!--android:theme="@android:style/Theme.Material.Light.DarkActionBar"-->
     <TableRow
         android:id="@+id/tableRow1"
         android:layout_height="343.0dp"
