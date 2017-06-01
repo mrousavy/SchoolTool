@@ -2450,7 +2450,7 @@ namespace SchoolTool
 			public const int tableRow3 = 2131099860;
 			
 			// aapt resource value: 0x7f0600b9
-			public const int tableRow12 = 2131099833;
+			public const int tableRow11 = 2131099833;
 			
 			// aapt resource value: 0x7f0600e1
 			public const int tableRow5 = 2131099873;
