@@ -122,7 +122,9 @@ namespace SchoolTool {
 
         internal void LoadClasses() {
             using (ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(_context)) {
-                StaticWebUntis.Classes = JsonConvert.DeserializeObject<List<Class>>(prefs.GetString("classes", null));
+                string val = prefs.GetString("classes", null);
+                if(val != null)
+                    StaticWebUntis.Classes = JsonConvert.DeserializeObject<List<Class>>(val);
             }
         }
 

@@ -24,6 +24,11 @@
     <item name="cardCornerRadius">18dp</item>
   </style>
 
+  <style name="LessonFree" parent="CardView">
+    <item name="cardBackgroundColor">#F9F9F9</item>
+    <item name="cardCornerRadius">18dp</item>
+  </style>
+
   
   <!-- Loading/Login Screen Theme -->
   <style name="Loading" parent="style/Theme.AppCompat.NoActionBar">
