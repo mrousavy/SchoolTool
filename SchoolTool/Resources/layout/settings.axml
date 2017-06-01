@@ -5,69 +5,41 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <RelativeLayout
-        android:id="@+id/favouriteTimetableLayout"
+  
+    <Spinner 
+        android:id="@+id/favouriteTimetable"
+        android:spinnerMode="dialog"
         android:layout_width="match_parent"
-        android:layout_height="74dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
-        <TextView
-            android:id="@+id/favouriteTimetableTitle"
-            android:text="@string/favouriteTimetable"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:gravity="bottom"
-            android:layout_height="37dp"
-            android:layout_width="match_parent" />
-        <TextView
-            android:id="@+id/favouriteTimetableOutput"
-            android:layout_below="@id/favouriteTimetableTitle"
-            android:textColor="@color/grey_500"
-            android:text="n/a"
-            android:gravity="top"
-            android:layout_height="37dp"
-            android:layout_width="match_parent" />
-    </RelativeLayout>
+        android:layout_marginRight="20dp"
+        android:layout_height="75dp" />
+    
     <View
         android:id="@+id/divider1"
         android:layout_height="1dp"
         android:layout_width="match_parent"
         android:background="@color/green_700"
-        android:layout_below="@id/favouriteTimetableLayout" />
-    <RelativeLayout
-        android:id="@+id/startingTimetableLayout"
+        android:layout_below="@id/favouriteTimetable" />
+  
+    <Spinner
+        android:id="@+id/startingTimetable"
+        android:spinnerMode="dialog"
+        android:layout_below="@id/favouriteTimetable"
+        android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_below="@id/divider1"
-        android:layout_height="74dp"
-        android:layout_width="match_parent">
-        <TextView
-            android:id="@+id/startingTimetableTitle"
-            android:text="@string/startingTimetable"
-            android:textSize="18dp"
-            android:gravity="bottom"
-            android:textColor="@color/black"
-            android:layout_height="37dp"
-            android:layout_width="match_parent" />
-        <TextView
-            android:id="@+id/startingTimetableOutput"
-            android:text="n/a"
-            android:gravity="top"
-            android:textColor="@color/grey_500"
-            android:layout_height="37dp"
-            android:layout_width="match_parent"
-            android:layout_below="@id/startingTimetableTitle" />
-    </RelativeLayout>
+        android:layout_height="75dp" />
+    
     <View
         android:id="@+id/divider2"
         android:layout_height="1dp"
         android:layout_width="match_parent"
         android:background="@color/green_700"
-        android:layout_below="@id/startingTimetableLayout" />
+        android:layout_below="@id/startingTimetable" />
     <Switch
         android:id="@+id/changeInTimetableSwitch"
         android:text="@string/changeInTimetable"
-        android:textSize="18dp"
+        android:textSize="14dp"
         android:textColor="@color/black"
         android:trackTint="@color/green_500"
         android:layout_marginLeft="20dp"
@@ -84,7 +56,7 @@
     <TextView
         android:id="@+id/alarmTextView"
         android:text="@string/alarm"
-        android:textSize="18dp"
+        android:textSize="14dp"
         android:gravity="center_vertical"
         android:layout_below="@id/divider3"
         android:textColor="@color/black"
