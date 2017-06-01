@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -84,6 +85,19 @@ namespace SchoolTool
             this.day = dayOfMonth;
             Toast.MakeText(this, "You have selected: " + day + "." + (month + 1) + "." + year, ToastLength.Long).Show();
             calendarbutton.Text = day + "." + (month + 1) + "." + year;
+=======
+﻿
+using Android.App;
+using Android.OS;
+
+namespace SchoolTool {
+    [Activity(Label = "TimetableActivity")]
+    public class TimetableActivity : Activity {
+        protected override void OnCreate(Bundle savedInstanceState) {
+            base.OnCreate(savedInstanceState);
+
+            // Create your application here
+>>>>>>> cbe19e077b8dbced0da5ed4e3003413e747f735c
         }
     }
 }
