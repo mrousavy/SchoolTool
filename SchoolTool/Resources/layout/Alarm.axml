@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/alarmPicker" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:id="@+id/checkboxLayout"
+        android:layout_below="@id/alarmPicker"
+        android:layout_height="20dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Tage auswählen:"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+        <CheckBox
+            android:text="Mo"
+            android:id="@+id/monday"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+        <CheckBox
+            android:text="Di"
+            android:id="@+id/tuesday"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+        <CheckBox
+            android:text="Mi"
+            android:id="@+id/wednesday"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+        <CheckBox
+            android:text="Do"
+            android:id="@+id/thursday"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+        <CheckBox
+            android:text="Fr"
+            android:id="@+id/friday"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/volumeLayout"
+        android:layout_below="@id/checkboxLayout"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Lautstärke:"
+            android:gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <SeekBar
+            android:id="@+id/volumeBar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:thumbTint="@color/green_500" />
+    </LinearLayout>
+    <Switch
+        android:id="@+id/onOffToggle"
+        android:text="Off"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:trackTint="@color/green_500"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+    <Button
+        android:id="@+id/saveButton"
+        android:text="Speichern"
+        android:onClick="save"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+    <TextView
+        android:text="Das ist ein dynamischer Wecker. Oben stellt *nicht* die Uhrzeit ein zu der man geweckt werden möchte, sondern die Stunden/Minuten die man vor Stundenbeginn geweckt werden will."
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volumeLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+</RelativeLayout>
