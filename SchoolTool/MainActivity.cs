@@ -1,27 +1,69 @@
 ﻿using Android.App;
 using Android.OS;
 using Android.Support.V7.App;
-using Android.Views;
 using Android.Widget;
-using WebUntisSharp;
+using mrousavy.APIs.WebUntisSharp;
+using System;
 
-namespace SchoolTool
-{
+namespace SchoolTool {
     [Activity(Label = "SchoolTool", MainLauncher = true, Icon = "@drawable/logo")]
-    public class MainActivity : AppCompatActivity
-    {
+    public class MainActivity : AppCompatActivity {
+        private EditText _school, _username, _password;
+        private ImageButton _login;
 
-        protected override void OnCreate(Bundle bundle)
-        {
-            // Has to be set before Activity is created
-            SetTheme(Resource.Style.SchoolToolDefault);
+        protected override void OnCreate(Bundle savedInstanceState) {
+            base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.Login);
 
-            base.OnCreate(bundle);
+            //Login button calls Login Method onClick-Event
+            _login = FindViewById<ImageButton>(Resource.Id.loginButton);
+            _login.Click += Login_Click;
 
-            //TODO: Testing Purposes            
-            SetContentView(Resource.Layout.Settings);
+            //Input fields for school, username and password
+            _school = FindViewById<EditText>(Resource.Id.schoolInput);
+            _username = FindViewById<EditText>(Resource.Id.unameInput);
+            _password = FindViewById<EditText>(Resource.Id.pwordInput);
 
-            StartActivity(typeof(TimetableActivity));
+            DataManager dataman = new DataManager(this);
+            string schoolUrl = dataman.SchoolUrl;
+            string username = dataman.Username;
+            string password = dataman.Password;
+            _school.Text = schoolUrl;
+            _username.Text = username;
+            _password.Text = password;
+
+            if (string.IsNullOrWhiteSpace(schoolUrl) && string.IsNullOrWhiteSpace(username) && string.IsNullOrWhiteSpace(password))
+                Login();
+        }
+
+        private void Login_Click(object sender, EventArgs e) {
+            Login();
+        }
+
+        private async void Login() {
+            try {
+                if (string.IsNullOrWhiteSpace(_school.Text))
+                    throw new Exception("School Url cannot be empty!");
+                if (string.IsNullOrWhiteSpace(_username.Text))
+                    throw new Exception("Username cannot be empty!");
+                if (string.IsNullOrWhiteSpace(_password.Text))
+                    throw new Exception("Password cannot be empty!");
+
+                //TODO: show loading bar
+                Toast.MakeText(this, "Logging in...", ToastLength.Long).Show();
+                //FindViewById<ImageButton>(Resource.Id.loadingLoginBar).Visibility = Android.Views.ViewStates.Visible;
+
+                StaticWebUntis.Untis = await WebUntis.New(_username.Text, _password.Text, _school.Text);
+                new DataManager(this).SaveData(_username.Text, _password.Text, _school.Text);
+
+                StartActivity(typeof(TimetableActivity));
+            } catch (Exception ex) {
+                // invalid username/password/school
+                Toast.MakeText(this, "Error! " + ex.Message, ToastLength.Long).Show();
+            }
+
+            //TODO: hide loading bar
+            //FindViewById<ImageButton>(Resource.Id.loadingLoginBar).Visibility = Android.Views.ViewStates.Gone;
         }
     }
 }

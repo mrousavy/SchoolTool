@@ -4,40 +4,25 @@
   <!--A single normal lesson for the Timegrid-->
   <style name="Lesson" parent="CardView">
     <item name="cardBackgroundColor">@color/orange_500</item>
-    <item name="cardCornerRadius">10dp</item>
+    <item name="cardCornerRadius">18dp</item>
   </style>
 
   <!--A single newly added lesson for the Timegrid-->
   <style name="LessonNew" parent="CardView">
     <item name="cardBackgroundColor">@color/green_500</item>
-    <item name="cardCornerRadius">10dp</item>
-  </style>
-  <!--A single substitution lesson for the Timegrid-->
-  <style name="LessonSubstitution" parent="CardView">
-    <item name="cardBackgroundColor">#00ffff</item>
-    <item name="cardCornerRadius">10dp</item>
+    <item name="cardCornerRadius">18dp</item>
   </style>
 
   <!--A single cancelled lesson for the Timegrid-->
   <style name="LessonCancellation" parent="CardView">
     <item name="cardBackgroundColor">@color/grey_500</item>
-    <item name="cardCornerRadius">10dp</item>
+    <item name="cardCornerRadius">18dp</item>
   </style>
 
-  <style name="LessonFree" parent="CardView">
-    <item name="cardBackgroundColor">#F9F9F9</item>
-    <item name="cardCornerRadius">10dp</item>
-  </style>
-  
-  
-  
-  
-  
-  
-  
   
   <!-- Loading/Login Screen Theme -->
-  <style name="Loading" parent="style/Theme.AppCompat.Light.NoActionBar">
+  <style name="Loading" parent="style/Theme.AppCompat.NoActionBar">
+    <item name="android:windowTranslucentStatus">true</item>
     <item name="android:colorPrimary">@color/green_800</item>
     <item name="android:windowBackground">@color/green_500</item>
 
@@ -48,27 +33,17 @@
     <!-- /TODO -->
 
     <!-- TextInput Colors -->
-    <item name="colorControlNormal">@color/white</item>
-    <item name="colorControlActivated">@color/green_700</item>
+    <item name="colorControlNormal">@color/green_700</item>
+    <item name="colorControlActivated">@color/green_800</item>
     <item name="colorControlHighlight">@color/green_800</item>
   </style>
 
-  
-  
   <!-- TODO: Default Design -->
   <style name="SchoolToolDefault" parent="style/Theme.AppCompat.Light">
-    <item name="android:background">@color/white</item>
+    <item name="colorPrimary">@color/green_500</item>
     <item name="android:textColorPrimary">@color/white</item>
   </style>
-  <!-- /TODO -->
-
-  
-  
-  
-  
-  
-  
-  
+  <!-- /TODO -->  
   
   <style name="Wecker" parent="@style/Theme.AppCompat">
     <item name="android:colorPrimary">@color/orange_400</item>
