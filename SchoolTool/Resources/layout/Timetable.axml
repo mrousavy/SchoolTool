@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  
+    <Spinner
+        android:id="@+id/chooseclass"
+        android:spinnerMode="dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:background="@color/grey_400"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+  
+    <Button
+        android:id="@+id/fordate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calender"
+        android:layout_below="@id/chooseclass"
+        android:layout_alignParentRight="true"
+        android:background="@color/grey_400"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"/>
+  <ScrollView
+    android:id="@+id/timetablescrollview"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@id/fordate">
+    
+    <TableLayout
+        android:id="@+id/timegrid"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/fordate">
+      
+        <TableRow
+            android:id="@+id/tablerow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+          <TextView
+                android:id="@+id/lessontime1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+          <android.support.v7.widget.CardView
+            android:id="@+id/lessoncard1"
+            style="@style/LessonFree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal">
+            
+            <TextView
+                android:id="@+id/lessoninfos1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" 
+                android:text="\n\n\n\n"/>
+          </android.support.v7.widget.CardView>
+         
+        </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+          android:id="@+id/lessontime2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard2"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos2"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+          android:id="@+id/lessontime3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard3"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos3"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/lessontime4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard4"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos4"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/lessontime5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard5"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos5"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/lessontime6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard6"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos6"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/lessontime7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard7"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos7"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/lessontime8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard8"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos8"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/lessontime9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard9"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos9"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/lessontime10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard10"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos10"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/lessontime11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard11"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos11"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+
+      <TableRow
+            android:id="@+id/tablerow12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/lessontime12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.CardView
+          android:id="@+id/lessoncard12"
+          style="@style/LessonFree"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:layout_gravity="center_horizontal">
+
+          <TextView
+              android:id="@+id/lessoninfos12"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:text="\n\n\n\n"/>
+        </android.support.v7.widget.CardView>
+
+      </TableRow>
+      
+    </TableLayout>
+    
+  </ScrollView>
+    
+</RelativeLayout>
