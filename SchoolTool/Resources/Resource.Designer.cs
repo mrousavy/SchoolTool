@@ -2077,113 +2077,113 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06002f
 			public const int left = 2131099695;
 			
-			// aapt resource value: 0x7f0600a3
-			public const int lessoncard1 = 2131099811;
-			
-			// aapt resource value: 0x7f0600c7
-			public const int lessoncard10 = 2131099847;
-			
-			// aapt resource value: 0x7f0600cb
-			public const int lessoncard11 = 2131099851;
-			
-			// aapt resource value: 0x7f0600cf
-			public const int lessoncard12 = 2131099855;
-			
-			// aapt resource value: 0x7f0600a7
-			public const int lessoncard2 = 2131099815;
-			
-			// aapt resource value: 0x7f0600ab
-			public const int lessoncard3 = 2131099819;
-			
-			// aapt resource value: 0x7f0600af
-			public const int lessoncard4 = 2131099823;
-			
-			// aapt resource value: 0x7f0600b3
-			public const int lessoncard5 = 2131099827;
-			
-			// aapt resource value: 0x7f0600b7
-			public const int lessoncard6 = 2131099831;
-			
-			// aapt resource value: 0x7f0600bb
-			public const int lessoncard7 = 2131099835;
-			
-			// aapt resource value: 0x7f0600bf
-			public const int lessoncard8 = 2131099839;
-			
-			// aapt resource value: 0x7f0600c3
-			public const int lessoncard9 = 2131099843;
-			
 			// aapt resource value: 0x7f0600a4
-			public const int lessoninfos1 = 2131099812;
+			public const int lessoncard1 = 2131099812;
 			
 			// aapt resource value: 0x7f0600c8
-			public const int lessoninfos10 = 2131099848;
+			public const int lessoncard10 = 2131099848;
 			
 			// aapt resource value: 0x7f0600cc
-			public const int lessoninfos11 = 2131099852;
+			public const int lessoncard11 = 2131099852;
 			
 			// aapt resource value: 0x7f0600d0
-			public const int lessoninfos12 = 2131099856;
+			public const int lessoncard12 = 2131099856;
 			
 			// aapt resource value: 0x7f0600a8
-			public const int lessoninfos2 = 2131099816;
+			public const int lessoncard2 = 2131099816;
 			
 			// aapt resource value: 0x7f0600ac
-			public const int lessoninfos3 = 2131099820;
+			public const int lessoncard3 = 2131099820;
 			
 			// aapt resource value: 0x7f0600b0
-			public const int lessoninfos4 = 2131099824;
+			public const int lessoncard4 = 2131099824;
 			
 			// aapt resource value: 0x7f0600b4
-			public const int lessoninfos5 = 2131099828;
+			public const int lessoncard5 = 2131099828;
 			
 			// aapt resource value: 0x7f0600b8
-			public const int lessoninfos6 = 2131099832;
+			public const int lessoncard6 = 2131099832;
 			
 			// aapt resource value: 0x7f0600bc
-			public const int lessoninfos7 = 2131099836;
+			public const int lessoncard7 = 2131099836;
 			
 			// aapt resource value: 0x7f0600c0
-			public const int lessoninfos8 = 2131099840;
+			public const int lessoncard8 = 2131099840;
 			
 			// aapt resource value: 0x7f0600c4
-			public const int lessoninfos9 = 2131099844;
+			public const int lessoncard9 = 2131099844;
 			
-			// aapt resource value: 0x7f0600a2
-			public const int lessontime1 = 2131099810;
+			// aapt resource value: 0x7f0600a5
+			public const int lessoninfos1 = 2131099813;
 			
-			// aapt resource value: 0x7f0600c6
-			public const int lessontime10 = 2131099846;
+			// aapt resource value: 0x7f0600c9
+			public const int lessoninfos10 = 2131099849;
 			
-			// aapt resource value: 0x7f0600ca
-			public const int lessontime11 = 2131099850;
+			// aapt resource value: 0x7f0600cd
+			public const int lessoninfos11 = 2131099853;
 			
-			// aapt resource value: 0x7f0600ce
-			public const int lessontime12 = 2131099854;
+			// aapt resource value: 0x7f0600d1
+			public const int lessoninfos12 = 2131099857;
 			
-			// aapt resource value: 0x7f0600a6
-			public const int lessontime2 = 2131099814;
+			// aapt resource value: 0x7f0600a9
+			public const int lessoninfos2 = 2131099817;
 			
-			// aapt resource value: 0x7f0600aa
-			public const int lessontime3 = 2131099818;
+			// aapt resource value: 0x7f0600ad
+			public const int lessoninfos3 = 2131099821;
 			
-			// aapt resource value: 0x7f0600ae
-			public const int lessontime4 = 2131099822;
+			// aapt resource value: 0x7f0600b1
+			public const int lessoninfos4 = 2131099825;
 			
-			// aapt resource value: 0x7f0600b2
-			public const int lessontime5 = 2131099826;
+			// aapt resource value: 0x7f0600b5
+			public const int lessoninfos5 = 2131099829;
 			
-			// aapt resource value: 0x7f0600b6
-			public const int lessontime6 = 2131099830;
+			// aapt resource value: 0x7f0600b9
+			public const int lessoninfos6 = 2131099833;
 			
-			// aapt resource value: 0x7f0600ba
-			public const int lessontime7 = 2131099834;
+			// aapt resource value: 0x7f0600bd
+			public const int lessoninfos7 = 2131099837;
 			
-			// aapt resource value: 0x7f0600be
-			public const int lessontime8 = 2131099838;
+			// aapt resource value: 0x7f0600c1
+			public const int lessoninfos8 = 2131099841;
 			
-			// aapt resource value: 0x7f0600c2
-			public const int lessontime9 = 2131099842;
+			// aapt resource value: 0x7f0600c5
+			public const int lessoninfos9 = 2131099845;
+			
+			// aapt resource value: 0x7f0600a3
+			public const int lessontime1 = 2131099811;
+			
+			// aapt resource value: 0x7f0600c7
+			public const int lessontime10 = 2131099847;
+			
+			// aapt resource value: 0x7f0600cb
+			public const int lessontime11 = 2131099851;
+			
+			// aapt resource value: 0x7f0600cf
+			public const int lessontime12 = 2131099855;
+			
+			// aapt resource value: 0x7f0600a7
+			public const int lessontime2 = 2131099815;
+			
+			// aapt resource value: 0x7f0600ab
+			public const int lessontime3 = 2131099819;
+			
+			// aapt resource value: 0x7f0600af
+			public const int lessontime4 = 2131099823;
+			
+			// aapt resource value: 0x7f0600b3
+			public const int lessontime5 = 2131099827;
+			
+			// aapt resource value: 0x7f0600b7
+			public const int lessontime6 = 2131099831;
+			
+			// aapt resource value: 0x7f0600bb
+			public const int lessontime7 = 2131099835;
+			
+			// aapt resource value: 0x7f0600bf
+			public const int lessontime8 = 2131099839;
+			
+			// aapt resource value: 0x7f0600c3
+			public const int lessontime9 = 2131099843;
 			
 			// aapt resource value: 0x7f06008c
 			public const int line1 = 2131099788;
@@ -2326,6 +2326,9 @@ namespace SchoolTool
 			// aapt resource value: 0x7f060068
 			public const int select_dialog_listview = 2131099752;
 			
+			// aapt resource value: 0x7f06009f
+			public const int settingsbutton = 2131099807;
+			
 			// aapt resource value: 0x7f060053
 			public const int shortcut = 2131099731;
 			
@@ -2377,41 +2380,41 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06000d
 			public const int tabMode = 2131099661;
 			
-			// aapt resource value: 0x7f0600a1
-			public const int tablerow1 = 2131099809;
+			// aapt resource value: 0x7f0600a2
+			public const int tablerow1 = 2131099810;
 			
-			// aapt resource value: 0x7f0600c5
-			public const int tablerow10 = 2131099845;
+			// aapt resource value: 0x7f0600c6
+			public const int tablerow10 = 2131099846;
 			
-			// aapt resource value: 0x7f0600c9
-			public const int tablerow11 = 2131099849;
+			// aapt resource value: 0x7f0600ca
+			public const int tablerow11 = 2131099850;
 			
-			// aapt resource value: 0x7f0600cd
-			public const int tablerow12 = 2131099853;
+			// aapt resource value: 0x7f0600ce
+			public const int tablerow12 = 2131099854;
 			
-			// aapt resource value: 0x7f0600a5
-			public const int tablerow2 = 2131099813;
+			// aapt resource value: 0x7f0600a6
+			public const int tablerow2 = 2131099814;
 			
-			// aapt resource value: 0x7f0600a9
-			public const int tablerow3 = 2131099817;
+			// aapt resource value: 0x7f0600aa
+			public const int tablerow3 = 2131099818;
 			
-			// aapt resource value: 0x7f0600ad
-			public const int tablerow4 = 2131099821;
+			// aapt resource value: 0x7f0600ae
+			public const int tablerow4 = 2131099822;
 			
-			// aapt resource value: 0x7f0600b1
-			public const int tablerow5 = 2131099825;
+			// aapt resource value: 0x7f0600b2
+			public const int tablerow5 = 2131099826;
 			
-			// aapt resource value: 0x7f0600b5
-			public const int tablerow6 = 2131099829;
+			// aapt resource value: 0x7f0600b6
+			public const int tablerow6 = 2131099830;
 			
-			// aapt resource value: 0x7f0600b9
-			public const int tablerow7 = 2131099833;
+			// aapt resource value: 0x7f0600ba
+			public const int tablerow7 = 2131099834;
 			
-			// aapt resource value: 0x7f0600bd
-			public const int tablerow8 = 2131099837;
+			// aapt resource value: 0x7f0600be
+			public const int tablerow8 = 2131099838;
 			
-			// aapt resource value: 0x7f0600c1
-			public const int tablerow9 = 2131099841;
+			// aapt resource value: 0x7f0600c2
+			public const int tablerow9 = 2131099842;
 			
 			// aapt resource value: 0x7f060091
 			public const int text = 2131099793;
@@ -2428,11 +2431,11 @@ namespace SchoolTool
 			// aapt resource value: 0x7f06008d
 			public const int time = 2131099789;
 			
-			// aapt resource value: 0x7f0600a0
-			public const int timegrid = 2131099808;
+			// aapt resource value: 0x7f0600a1
+			public const int timegrid = 2131099809;
 			
-			// aapt resource value: 0x7f06009f
-			public const int timetablescrollview = 2131099807;
+			// aapt resource value: 0x7f0600a0
+			public const int timetablescrollview = 2131099808;
 			
 			// aapt resource value: 0x7f060043
 			public const int title = 2131099715;

@@ -25,6 +25,7 @@ namespace SchoolTool {
         private const int DateDialog = 1;
         private int _year = System.DateTime.Now.Year, _month = System.DateTime.Now.Month, _day = System.DateTime.Now.Day;
         Button _calendarbutton;
+        Button _settings;
 
         protected override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
@@ -55,6 +56,13 @@ namespace SchoolTool {
 
             _calendarbutton.Click += delegate {
                 ShowDialog(DateDialog);
+            };
+
+            _settings = FindViewById<Button>(Resource.Id.settingsbutton);
+
+            _settings.Click += delegate
+            {
+                StartActivity(typeof(SettingsActivity));
             };
         }
 
