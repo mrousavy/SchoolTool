@@ -53,6 +53,10 @@ namespace SchoolTool {
                 Toast.MakeText(this, "Logging in...", ToastLength.Long).Show();
                 //FindViewById<ImageButton>(Resource.Id.loadingLoginBar).Visibility = Android.Views.ViewStates.Visible;
 
+                if(_school.Text.ToLower() == "tgm"){
+                  _school.Text = "https://stpl.tgm.ac.at/WebUntis/jsonrpc.do?school=tgm";
+                }
+
                 StaticWebUntis.Untis = await WebUntis.New(_username.Text, _password.Text, _school.Text);
                 new DataManager(this).SaveData(_username.Text, _password.Text, _school.Text);
                 StaticWebUntis.Classes = await StaticWebUntis.GetClasses();
