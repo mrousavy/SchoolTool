@@ -55,6 +55,7 @@ namespace SchoolTool {
 
                 StaticWebUntis.Untis = await WebUntis.New(_username.Text, _password.Text, _school.Text);
                 new DataManager(this).SaveData(_username.Text, _password.Text, _school.Text);
+                StaticWebUntis.Classes = await StaticWebUntis.GetClasses();
 
                 StartActivity(typeof(TimetableActivity));
             } catch (Exception ex) {

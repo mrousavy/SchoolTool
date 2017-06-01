@@ -6,6 +6,11 @@
     <item name="cardBackgroundColor">@color/orange_500</item>
     <item name="cardCornerRadius">18dp</item>
   </style>
+  
+  <!--A single normal lesson for the Timegrid-->
+  <style name="LessonFree" parent="CardView">
+    <item name="cardBackgroundColor">@color/orange_500</item>
+  </style>
 
   <!--A single newly added lesson for the Timegrid-->
   <style name="LessonNew" parent="CardView">
