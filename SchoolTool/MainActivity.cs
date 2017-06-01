@@ -6,7 +6,7 @@ using mrousavy.APIs.WebUntisSharp;
 using System;
 
 namespace SchoolTool {
-    [Activity(Label = "SchoolTool", MainLauncher = true, Icon = "@drawable/logo")]
+    [Activity(Label = "SchoolTool", MainLauncher = false, Icon = "@drawable/logo")]
     public class MainActivity : AppCompatActivity {
         private EditText _school, _username, _password;
         private ImageButton _login;

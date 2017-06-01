@@ -87,6 +87,7 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingsActivity.cs" />
+    <Compile Include="SettingsTEMP.cs" />
     <Compile Include="StaticWebUntis.cs" />
     <Compile Include="TimetableActivity.cs" />
     <Compile Include="WeckerActivity.cs" />

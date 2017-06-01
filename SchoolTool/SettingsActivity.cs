@@ -28,11 +28,11 @@ namespace SchoolTool {
             };
 
             //favourite timetable layout
-            RelativeLayout favouriteTimetableLayout = FindViewById<RelativeLayout>(Resource.Id.favouriteTimetableLayout);
+            Spinner favouriteTimetableLayout = FindViewById<Spinner>(Resource.Id.favouriteTimetable); //changed, because it's now a spinner
             favouriteTimetableLayout.Click += FavouriteTimetableLayout_Click;
 
             //starting timetable layout
-            RelativeLayout startingTimetableLayout = FindViewById<RelativeLayout>(Resource.Id.startingTimetableLayout);
+            Spinner startingTimetableLayout = FindViewById<Spinner>(Resource.Id.startingTimetable); //changed, because it's now a spinner
             startingTimetableLayout.Click += StartingTimetableLayout_Click;
 
 
