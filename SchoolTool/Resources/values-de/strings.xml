@@ -14,4 +14,5 @@
   <string name="startingTimetable">Startstundenplan</string>
   
   <string name="Hello">Hallo Welt, Klick mich!</string>
+  <string name="Get">Stundenplan auswählen</string>
 </resources>
