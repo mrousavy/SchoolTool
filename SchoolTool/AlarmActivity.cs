@@ -28,10 +28,13 @@ namespace SchoolTool {
 
             SeekBar volume = FindViewById<SeekBar>(Resource.Id.volumeBar);
 
-            Switch onOff = FindViewById<Switch>(Resource.Id.onOffToggle);
+            Switch alarmSwitch = FindViewById<Switch>(Resource.Id.onOffToggle);
 
             //button call save-Method onClick
             Button save = FindViewById<Button>(Resource.Id.saveButton);
+            save.Click += delegate {
+                Toast.MakeText(this, "Saved!", ToastLength.Short).Show();
+            };
 
             //TODO: you can change the switch to turn the alarm on or off and its text also changes to the current state
             //TODO: if you press the save button it should check how many hours before it should wake up + on which days + on which volume + make toast that its saved

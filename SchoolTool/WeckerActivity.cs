@@ -8,7 +8,7 @@ namespace SchoolTool {
         protected override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
 
-            //SetContentView(Resource.Layout.Wecker);
+            SetContentView(Resource.Layout.Alarm);
         }
     }
 }
