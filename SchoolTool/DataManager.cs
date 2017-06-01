@@ -1,5 +1,8 @@
-﻿using Android.Content;
+﻿using System.Collections.Generic;
+using Android.Content;
 using Android.Preferences;
+using mrousavy.APIs.WebUntisSharp.WebUnitsJsonSchemes.Classes;
+using Newtonsoft.Json;
 
 namespace SchoolTool {
     internal class DataManager {
@@ -103,6 +106,41 @@ namespace SchoolTool {
                     editor.PutString("password", Cipher.Encrypt(password));
                     editor.PutString("schoolurl", Cipher.Encrypt(schoolUrl));
 
+                    editor.Apply();
+                }
+            }
+        }
+
+        internal void CacheClasses() {
+            using (ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(_context)) {
+                using (ISharedPreferencesEditor editor = prefs.Edit()) {
+                    editor.PutString("classes", JsonConvert.SerializeObject(StaticWebUntis.Classes));
+                    editor.Apply();
+                }
+            }
+        }
+
+        internal void LoadClasses() {
+            using (ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(_context)) {
+                StaticWebUntis.Classes = JsonConvert.DeserializeObject<List<Class>>(prefs.GetString("classes", null));
+            }
+        }
+
+        internal void DeleteLogin() {
+            using (ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(_context)) {
+                using (ISharedPreferencesEditor editor = prefs.Edit()) {
+                    editor.PutString("username", null);
+                    editor.PutString("password", null);
+                    editor.PutString("schoolurl", null);
+                    editor.Apply();
+                }
+            }
+        }
+
+        internal void DeleteClasses() {
+            using (ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(_context)) {
+                using (ISharedPreferencesEditor editor = prefs.Edit()) {
+                    editor.PutString("classes", null);
                     editor.Apply();
                 }
             }

@@ -53,13 +53,25 @@ namespace SchoolTool {
                 Toast.MakeText(this, "Logging in...", ToastLength.Long).Show();
                 //FindViewById<ImageButton>(Resource.Id.loadingLoginBar).Visibility = Android.Views.ViewStates.Visible;
 
-                if(_school.Text.ToLower() == "tgm"){
-                  _school.Text = "https://stpl.tgm.ac.at/WebUntis/jsonrpc.do?school=tgm";
+                if (_school.Text.ToLower() == "tgm") {
+                    _school.Text = "https://stpl.tgm.ac.at/WebUntis/jsonrpc.do?school=tgm";
                 }
 
                 StaticWebUntis.Untis = await WebUntis.New(_username.Text, _password.Text, _school.Text);
-                new DataManager(this).SaveData(_username.Text, _password.Text, _school.Text);
-                StaticWebUntis.Classes = await StaticWebUntis.GetClasses();
+                DataManager dataman = new DataManager(this);
+
+                //cache login
+                dataman.SaveData(_username.Text, _password.Text, _school.Text);
+
+                //load classes
+                dataman.LoadClasses();
+
+                if (StaticWebUntis.Classes == null) {
+                    //classes not yet set, cache them
+                    int schoolyear = (await StaticWebUntis.Untis.GetSchoolyear()).id;
+                    StaticWebUntis.Classes = await StaticWebUntis.Untis.GetClasses(schoolyear.ToString());
+                    dataman.CacheClasses();
+                }
 
                 StartActivity(typeof(TimetableActivity));
             } catch (Exception ex) {

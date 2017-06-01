@@ -38,21 +38,15 @@ namespace SchoolTool {
 
             //logout button - calls Logout on Click
             Button logout = FindViewById<Button>(Resource.Id.logoutButton);
+            logout.Click += Logout_Click;
 
-            //TODO: *NEW* when clicking on logout button it should logout, and open the login screen
-            
             _dataman = new DataManager(this);
-
-            LoadClasses();
         }
 
-        private async void LoadClasses() {
-            try {
-                int schoolyear = (await StaticWebUntis.Untis.GetSchoolyear()).id;
-                _classes = await StaticWebUntis.Untis.GetClasses(schoolyear.ToString());
-            } catch (Exception e) {
-                Toast.MakeText(this, "Error loading classes: " + e, ToastLength.Long).Show();
-            }
+        private void Logout_Click(object sender, EventArgs e) {
+            _dataman.DeleteLogin();
+            _dataman.DeleteClasses();
+            StartActivity(typeof(MainActivity));
         }
 
         private void StartingTimetableLayout_Click(object sender, System.EventArgs e) {
