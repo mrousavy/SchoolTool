@@ -19,63 +19,60 @@ namespace SchoolTool {
         // TODO: Set the timetable dynamically with a date from the date dialog picker and the class from the spinner
         // change the style
 
-        Spinner classspinner;
-        ArrayAdapter<String> adapter;
-        private const int DATE_DIALOG = 1;
-        private int year, month, day;
-        Button calendarbutton;
+        Spinner _classspinner;
+        ArrayAdapter<string> _adapter;
+        private const int DateDialog = 1;
+        private int _year, _month, _day;
+        Button _calendarbutton;
 
         protected override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Timetable);
 
-            classspinner = FindViewById<Spinner>(Resource.Id.chooseclass);
+            _classspinner = FindViewById<Spinner>(Resource.Id.chooseclass);
 
-            adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            _adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerDropDownItem);
 
-            classspinner.Adapter = adapter;
+            _classspinner.Adapter = _adapter;
 
             //TODO: Insert Classes with the WebUntis API
 
-            adapter.Add("Get Timetable");
-            adapter.Add("3DHIT");
-            adapter.Add("3CHIT");
-            adapter.Add("3AHIT");
-            adapter.Add("3BHIT");
+            _adapter.Add("Get Timetable");
+            _adapter.Add("3DHIT");
+            _adapter.Add("3CHIT");
+            _adapter.Add("3AHIT");
+            _adapter.Add("3BHIT");
 
-            classspinner.ItemSelected +=
-                new System.EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            _classspinner.ItemSelected += Spinner_ItemSelected;
 
-            calendarbutton = FindViewById<Button>(Resource.Id.fordate);
+            _calendarbutton = FindViewById<Button>(Resource.Id.fordate);
 
-            calendarbutton.Click += delegate {
-                ShowDialog(DATE_DIALOG);
+            _calendarbutton.Click += delegate {
+                ShowDialog(DateDialog);
             };
         }
 
+        [Obsolete("deprecated")]
         protected override Dialog OnCreateDialog(int id) {
             switch (id) {
-                case DATE_DIALOG: {
-                    return new DatePickerDialog(this, this, year, month, day);
-                }
-                    break;
-                default:
-                    break;
+                case DateDialog:
+                    return new DatePickerDialog(this, this, _year, _month, _day);
             }
             return null;
         }
 
-        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e) {
-            String chosenclass = Convert.ToString(adapter.GetItem(e.Position));
+        private void Spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e) {
+            string chosenclass = Convert.ToString(_adapter.GetItem(e.Position));
+            //TODO
         }
 
         public void OnDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-            this.year = year;
-            this.month = monthOfYear;
-            this.day = dayOfMonth;
-            Toast.MakeText(this, "You have selected: " + day + "." + (month + 1) + "." + year, ToastLength.Long).Show();
-            calendarbutton.Text = day + "." + (month + 1) + "." + year;
+            this._year = year;
+            this._month = monthOfYear;
+            this._day = dayOfMonth;
+            Toast.MakeText(this, "You have selected: " + _day + "." + (_month + 1) + "." + year, ToastLength.Long).Show();
+            _calendarbutton.Text = _day + "." + (_month + 1) + "." + year;
         }
     }
 }
