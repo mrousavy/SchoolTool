@@ -10,6 +10,7 @@ namespace SchoolTool
     [Activity(Label = "SchoolTool", MainLauncher = true, Icon = "@drawable/logo")]
     public class MainActivity : AppCompatActivity
     {
+
         protected override void OnCreate(Bundle bundle)
         {
             // Has to be set before Activity is created
@@ -19,6 +20,8 @@ namespace SchoolTool
 
             //TODO: Testing Purposes            
             SetContentView(Resource.Layout.Settings);
+
+            StartActivity(typeof(TimetableActivity));
         }
     }
 }

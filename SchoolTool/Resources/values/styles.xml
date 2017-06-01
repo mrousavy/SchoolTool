@@ -4,22 +4,30 @@
   <!--A single normal lesson for the Timegrid-->
   <style name="Lesson" parent="CardView">
     <item name="cardBackgroundColor">@color/orange_500</item>
-    <item name="cardCornerRadius">18dp</item>
+    <item name="cardCornerRadius">10dp</item>
   </style>
 
   <!--A single newly added lesson for the Timegrid-->
   <style name="LessonNew" parent="CardView">
     <item name="cardBackgroundColor">@color/green_500</item>
-    <item name="cardCornerRadius">18dp</item>
+    <item name="cardCornerRadius">10dp</item>
+  </style>
+  <!--A single substitution lesson for the Timegrid-->
+  <style name="LessonSubstitution" parent="CardView">
+    <item name="cardBackgroundColor">#00ffff</item>
+    <item name="cardCornerRadius">10dp</item>
   </style>
 
   <!--A single cancelled lesson for the Timegrid-->
   <style name="LessonCancellation" parent="CardView">
     <item name="cardBackgroundColor">@color/grey_500</item>
-    <item name="cardCornerRadius">18dp</item>
+    <item name="cardCornerRadius">10dp</item>
   </style>
 
-  
+  <style name="LessonFree" parent="CardView">
+    <item name="cardBackgroundColor">#F9F9F9</item>
+    <item name="cardCornerRadius">10dp</item>
+  </style>
   
   
   
@@ -48,7 +56,7 @@
   
   
   <!-- TODO: Default Design -->
-  <style name="SchoolToolDefault" parent="style/Theme.AppCompat">
+  <style name="SchoolToolDefault" parent="style/Theme.AppCompat.Light">
     <item name="android:background">@color/white</item>
     <item name="android:textColorPrimary">@color/white</item>
   </style>

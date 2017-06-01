@@ -45,4 +45,5 @@
             android:inputType="textPassword"
             android:hint="Passwort" />
     </android.support.design.widget.TextInputLayout>
+
 </LinearLayout>
