@@ -45,7 +45,7 @@ namespace SchoolTool {
             //logout button - calls Logout on Click
             TextView alarm = FindViewById<TextView>(Resource.Id.alarmTextView);
             alarm.Click += delegate {
-                StartActivity(typeof(WeckerActivity));
+                StartActivity(typeof(AlarmActivity));
             };
 
             //The switch to turn notifications on or off

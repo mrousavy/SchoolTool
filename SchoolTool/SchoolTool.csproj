@@ -89,7 +89,6 @@
     <Compile Include="SettingsActivity.cs" />
     <Compile Include="StaticWebUntis.cs" />
     <Compile Include="TimetableActivity.cs" />
-    <Compile Include="WeckerActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -20,12 +20,12 @@ namespace SchoolTool {
         // TODO: Set the timetable dynamically with a date from the date dialog picker and the class from the spinner
         // change the style
 
-        Spinner _classspinner;
-        ArrayAdapter<string> _adapter;
+        private Spinner _classspinner;
+        private ArrayAdapter<string> _adapter;
         private const int DateDialog = 1;
         private int _year = System.DateTime.Now.Year, _month = System.DateTime.Now.Month, _day = System.DateTime.Now.Day;
-        Button _calendarbutton;
-        Button _settings;
+        private Button _calendarbutton;
+        private Button _settings;
 
         protected override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
@@ -40,13 +40,13 @@ namespace SchoolTool {
 
             //TODO: Insert Classes with the WebUntis API
 
-            if(StaticWebUntis.Classes != null)
+            if (StaticWebUntis.Classes != null)
                 //foreach(Class c in StaticWebUntis.Classes)
                 //{
                 //    _adapter.Add(c.name);
                 //}
 
-            _adapter.AddAll(new List<string>( StaticWebUntis.Classes.Select(c => c.name)));
+                _adapter.AddAll(new List<string>(StaticWebUntis.Classes.Select(c => c.name)));
 
             _classspinner.ItemSelected += Spinner_ItemSelected;
 
@@ -60,8 +60,7 @@ namespace SchoolTool {
 
             _settings = FindViewById<Button>(Resource.Id.settingsbutton);
 
-            _settings.Click += delegate
-            {
+            _settings.Click += delegate {
                 StartActivity(typeof(SettingsActivity));
             };
         }
