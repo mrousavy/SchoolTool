@@ -67,7 +67,7 @@
     </LinearLayout>
     <Switch
         android:id="@+id/onOffToggle"
-        android:text="Off"
+        android:text="Wecker"
         android:textSize="12dp"
         android:textColor="@color/black"
         android:trackTint="@color/green_500"

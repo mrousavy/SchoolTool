@@ -6,7 +6,7 @@ using mrousavy.APIs.WebUntisSharp;
 using System;
 
 namespace SchoolTool {
-    [Activity(Label = "SchoolTool", MainLauncher = false, Icon = "@drawable/logo")]
+    [Activity(Label = "SchoolTool", MainLauncher = true, Icon = "@drawable/logo")]
     public class MainActivity : AppCompatActivity {
         private EditText _school, _username, _password;
         private ImageButton _login;
@@ -67,10 +67,14 @@ namespace SchoolTool {
                 dataman.LoadClasses();
 
                 if (StaticWebUntis.Classes == null) {
-                    //classes not yet set, cache them
-                    int schoolyear = (await StaticWebUntis.Untis.GetSchoolyear()).id;
-                    StaticWebUntis.Classes = await StaticWebUntis.Untis.GetClasses(schoolyear.ToString());
-                    dataman.CacheClasses();
+                    try {
+                        //classes not yet set, cache them
+                        //int schoolyear = (await StaticWebUntis.Untis.GetSchoolyear()).id;
+                        //TODO: remove "9" placeholder
+                        StaticWebUntis.Classes = await StaticWebUntis.Untis.GetClasses("9");
+                        dataman.CacheClasses();
+                    }
+                    catch { }
                 }
 
                 StartActivity(typeof(TimetableActivity));

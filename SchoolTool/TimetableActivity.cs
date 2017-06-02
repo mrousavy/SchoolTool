@@ -10,6 +10,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
+using mrousavy.APIs.WebUntisSharp.WebUnitsJsonSchemes.Classes;
 
 namespace SchoolTool {
     [Activity(Theme = "@style/Theme.AppCompat.Light", Label = "SchoolTool", MainLauncher = false,
@@ -19,11 +20,12 @@ namespace SchoolTool {
         // TODO: Set the timetable dynamically with a date from the date dialog picker and the class from the spinner
         // change the style
 
-        Spinner _classspinner;
-        ArrayAdapter<string> _adapter;
+        private Spinner _classspinner;
+        private ArrayAdapter<string> _adapter;
         private const int DateDialog = 1;
-        private int _year, _month, _day;
-        Button _calendarbutton;
+        private int _year = System.DateTime.Now.Year, _month = System.DateTime.Now.Month, _day = System.DateTime.Now.Day;
+        private Button _calendarbutton;
+        private Button _settings;
 
         protected override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
@@ -38,18 +40,28 @@ namespace SchoolTool {
 
             //TODO: Insert Classes with the WebUntis API
 
-            _adapter.Add("Get Timetable");
-            _adapter.Add("3DHIT");
-            _adapter.Add("3CHIT");
-            _adapter.Add("3AHIT");
-            _adapter.Add("3BHIT");
+            if (StaticWebUntis.Classes != null)
+                //foreach(Class c in StaticWebUntis.Classes)
+                //{
+                //    _adapter.Add(c.name);
+                //}
+
+                _adapter.AddAll(new List<string>(StaticWebUntis.Classes.Select(c => c.name)));
 
             _classspinner.ItemSelected += Spinner_ItemSelected;
 
             _calendarbutton = FindViewById<Button>(Resource.Id.fordate);
 
+            _calendarbutton.Text = _day + "." + (_month + 1) + "." + _year;
+
             _calendarbutton.Click += delegate {
                 ShowDialog(DateDialog);
+            };
+
+            _settings = FindViewById<Button>(Resource.Id.settingsbutton);
+
+            _settings.Click += delegate {
+                StartActivity(typeof(SettingsActivity));
             };
         }
 
@@ -71,8 +83,8 @@ namespace SchoolTool {
             this._year = year;
             this._month = monthOfYear;
             this._day = dayOfMonth;
-            Toast.MakeText(this, "You have selected: " + _day + "." + (_month + 1) + "." + year, ToastLength.Long).Show();
-            _calendarbutton.Text = _day + "." + (_month + 1) + "." + year;
+            Toast.MakeText(this, "You have selected: " + _day + "." + (_month + 1) + "." + _year, ToastLength.Long).Show();
+            _calendarbutton.Text = _day + "." + (_month + 1) + "." + _year;
         }
     }
 }
